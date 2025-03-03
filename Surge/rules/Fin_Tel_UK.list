@@ -1,8 +1,8 @@
 # NAME: UK Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
 # UPDATED: 2024-12-11
-DOMAIN-KEYWORD,clearscore
-DOMAIN-SUFFIX,clearscore.com
+DOMAIN-KEYWORD,clearscore,extended-matching
+DOMAIN-SUFFIX,clearscore.com,extended-matching
 DOMAIN-SUFFIX,barclays.co.uk
 DOMAIN-SUFFIX,hsbc.co.uk
 DOMAIN-SUFFIX,lloydsbank.co.uk
