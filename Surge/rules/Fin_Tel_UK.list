@@ -1,7 +1,6 @@
 # NAME: UK Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
 # UPDATED: 2024-12-11
-DOMAIN,cdn.branch.io
 DOMAIN-SUFFIX,clearscore.com,extended-matching
 DOMAIN-SUFFIX,barclays.co.uk
 DOMAIN-SUFFIX,hsbc.co.uk
