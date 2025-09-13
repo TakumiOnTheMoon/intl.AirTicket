@@ -1,7 +1,11 @@
 # NAME: UK Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2024-12-11
-DOMAIN-SUFFIX,clearscore.com,extended-matching
+# UPDATED: 2025-09-13
+# DESCRIPTION: 英国主要银行、征信机构、数字银行、电信运营商域名代理规则清单
+
+##################################
+# 🏦 银行 / 金融机构
+##################################
 DOMAIN-SUFFIX,barclays.co.uk
 DOMAIN-SUFFIX,hsbc.co.uk
 DOMAIN-SUFFIX,lloydsbank.co.uk
@@ -9,14 +13,63 @@ DOMAIN-SUFFIX,natwest.com
 DOMAIN-SUFFIX,santander.co.uk
 DOMAIN-SUFFIX,halifax.co.uk
 DOMAIN-SUFFIX,standardchartered.co.uk
+DOMAIN-SUFFIX,rbs.co.uk
+DOMAIN-SUFFIX,tsb.co.uk
+DOMAIN-SUFFIX,virginmoney.com
+DOMAIN-SUFFIX,ybs.co.uk
+DOMAIN-SUFFIX,nationwide.co.uk
+DOMAIN-SUFFIX,metrobankonline.co.uk
+
+# 数字银行 & 金融科技
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,starlingbank.com
+DOMAIN-SUFFIX,atom.bank
+DOMAIN-SUFFIX,revolut.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,curve.com
+DOMAIN-SUFFIX,plumguide.com
+DOMAIN-SUFFIX,tide.co
+DOMAIN-SUFFIX,zopa.com
+
+# 信用卡 & 信用服务
+DOMAIN-SUFFIX,aquacard.co.uk
+DOMAIN-SUFFIX,jaja.co.uk
+DOMAIN-SUFFIX,vanquis.co.uk
+DOMAIN-SUFFIX,mbna.co.uk
+DOMAIN-SUFFIX,newdaycards.com
+
+##################################
+# 🔐 征信与信用评分
+##################################
+DOMAIN-SUFFIX,clearscore.com
 DOMAIN-SUFFIX,creditkarma.co.uk
 DOMAIN-SUFFIX,experian.co.uk
-DOMAIN-SUFFIX,jaja.co.uk
-DOMAIN-SUFFIX,aquacard.co.uk
+DOMAIN-SUFFIX,equifax.co.uk
+DOMAIN-SUFFIX,transunion.co.uk
+
+##################################
+# 📡 电信运营商
+##################################
+# 四大主流运营商
 DOMAIN-SUFFIX,vodafone.co.uk
 DOMAIN-SUFFIX,o2.co.uk
 DOMAIN-SUFFIX,three.co.uk
 DOMAIN-SUFFIX,ee.co.uk
-DOMAIN-SUFFIX,giffgaff.com
-DOMAIN-SUFFIX,curve.com
-DOMAIN-SUFFIX,monzo.com
+
+# 子品牌 & MVNO
+DOMAIN-SUFFIX,giffgaff.com       # O2 旗下
+DOMAIN-SUFFIX,tescomobile.com    # O2 合作
+DOMAIN-SUFFIX,lebara.co.uk       # Vodafone 网络
+DOMAIN-SUFFIX,voxi.co.uk         # Vodafone 旗下
+DOMAIN-SUFFIX,idmobile.co.uk     # Three 旗下
+DOMAIN-SUFFIX,smarty.co.uk       # Three 旗下
+DOMAIN-SUFFIX,plus.net           # BT/EE 旗下
+DOMAIN-SUFFIX,bt.com             # BT / EE
+DOMAIN-SUFFIX,sky.com            # Sky Mobile (O2 网络)
+
+##################################
+# 📌 其他常见支付/理财服务
+##################################
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,adyen.com
