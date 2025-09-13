@@ -1,6 +1,11 @@
 # NAME: HK Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2024-12-11
+# UPDATED: 2025-09-13
+# DESCRIPTION: 香港主要银行、数字银行、征信机构、电信运营商域名代理规则清单
+
+##################################
+# 🏦 香港主要银行
+##################################
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hangseng.com
 DOMAIN-SUFFIX,boc.hk
@@ -8,10 +13,50 @@ DOMAIN-SUFFIX,standardchartered.com.hk
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dbs.com.hk
 DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-SUFFIX,ocbcwhhk.com
+DOMAIN-SUFFIX,icbcasia.com
+DOMAIN-SUFFIX,bankcomm.com.hk
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,za.bank
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,antbank.hk
+DOMAIN-SUFFIX,wechatpay.com.hk
+DOMAIN-SUFFIX,alipay.hk
+
+##################################
+# 🔐 信用卡 / 金融服务
+##################################
+DOMAIN-SUFFIX,americanexpress.com.hk
+DOMAIN-SUFFIX,citicards.com.hk
+DOMAIN-SUFFIX,aeon.com.hk
+DOMAIN-SUFFIX,uob.com.hk
+
+##################################
+# 📡 电信运营商
+##################################
+# 中资 & 本地主要运营商
 DOMAIN-SUFFIX,smartone.com
 DOMAIN-SUFFIX,csl.com.hk
+DOMAIN-SUFFIX,hkcsl.com
 DOMAIN-SUFFIX,one2free.com
 DOMAIN-SUFFIX,three.com.hk
-DOMAIN-SUFFIX,hkcsl.com
 DOMAIN-SUFFIX,china-mobile.com
 DOMAIN-SUFFIX,cuniq.com
+DOMAIN-SUFFIX,1010.com.hk
+DOMAIN-SUFFIX,cmhk.com
+
+# 固网/宽带服务
+DOMAIN-SUFFIX,hkt.com
+DOMAIN-SUFFIX,netvigator.com
+DOMAIN-SUFFIX,pccw.com
+DOMAIN-SUFFIX,hkbnes.net
+DOMAIN-SUFFIX,hkbnes.com
+DOMAIN-SUFFIX,ihkt.com
+
+##################################
+# 📌 其他支付/金融科技
+##################################
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,octopus.com
+DOMAIN-SUFFIX,tapngo.com.hk
+DOMAIN-SUFFIX,ppshk.com
