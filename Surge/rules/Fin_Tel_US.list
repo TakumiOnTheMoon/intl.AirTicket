@@ -1,23 +1,84 @@
 # NAME: US Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2024-12-11
+# UPDATED: 2025-09-13
+# DESCRIPTION: 美国主要银行、电信运营商、征信机构域名代理规则清单
+
+##################################
+# 🏦 美国主要银行
+##################################
 DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bofa.com
 DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,jpmorganchase.com
 DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wf.com
 DOMAIN-SUFFIX,wellsfargomedia.com
 DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citibank.com
 DOMAIN-SUFFIX,usbank.com
 DOMAIN-SUFFIX,tdbank.com
 DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitalone360.com
 DOMAIN-SUFFIX,pnc.com
 DOMAIN-SUFFIX,truist.com
+DOMAIN-SUFFIX,suntrust.com
+DOMAIN-SUFFIX,bbt.com
 DOMAIN-SUFFIX,ally.com
 DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,discover.com
+DOMAIN-SUFFIX,gs.com
+DOMAIN-SUFFIX,marcus.com
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,53.com
+DOMAIN-SUFFIX,regions.com
+
+##################################
+# 🔐 征信与金融服务
+##################################
 DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,transunion.com
+DOMAIN-SUFFIX,myfico.com
+DOMAIN-SUFFIX,fico.com
+
+##################################
+# 📡 电信运营商
+##################################
+# Verizon
 DOMAIN-SUFFIX,verizon.com
+DOMAIN-SUFFIX,verizonwireless.com
+DOMAIN-SUFFIX,vz.com
 DOMAIN-SUFFIX,vzw.com
+
+# AT&T
 DOMAIN-SUFFIX,att.com
+DOMAIN-SUFFIX,att.net
+DOMAIN-SUFFIX,sbcglobal.net
+DOMAIN-SUFFIX,bellsouth.net
+
+# T-Mobile / Sprint
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,sprint.com
-DOMAIN-SUFFIX,schwab.com
-DOMAIN-SUFFIX,myfico.com
+DOMAIN-SUFFIX,metropcs.com
+DOMAIN-SUFFIX,boostmobile.com
+
+# Comcast / Xfinity
+DOMAIN-SUFFIX,comcast.com
+DOMAIN-SUFFIX,xfinity.com
+
+# Charter Spectrum
+DOMAIN-SUFFIX,spectrum.com
+DOMAIN-SUFFIX,charter.com
+
+# Cox Communications
+DOMAIN-SUFFIX,cox.com
+DOMAIN-SUFFIX,cox.net
+
+# CenturyLink / Lumen
+DOMAIN-SUFFIX,centurylink.com
+DOMAIN-SUFFIX,lumen.com
+DOMAIN-SUFFIX,qwest.net
+
+# Frontier
+DOMAIN-SUFFIX,frontier.com
