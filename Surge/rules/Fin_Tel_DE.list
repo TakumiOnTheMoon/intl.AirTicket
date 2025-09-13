@@ -1,15 +1,76 @@
 # NAME: DE Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2024-12-11
+# UPDATED: 2025-09-13
+# DESCRIPTION: 德国主要银行、数字银行、支付平台、电信运营商域名代理规则清单
+
+##################################
+# 🏦 银行 / 金融机构
+##################################
 DOMAIN-SUFFIX,deutsche-bank.de
+DOMAIN-SUFFIX,db.com
 DOMAIN-SUFFIX,commerzbank.de
 DOMAIN-SUFFIX,sparkasse.de
 DOMAIN-SUFFIX,postbank.de
 DOMAIN-SUFFIX,dkb.de
+DOMAIN-SUFFIX,hypovereinsbank.de
+DOMAIN-SUFFIX,unicredit.de
+DOMAIN-SUFFIX,volksbank.de
+DOMAIN-SUFFIX,raiffeisen.de
+DOMAIN-SUFFIX,consorsbank.de
+DOMAIN-SUFFIX,ing.de
+DOMAIN-SUFFIX,norisbank.de
+DOMAIN-SUFFIX,comdirect.de
+DOMAIN-SUFFIX,fidor.de
+
+# 数字银行 & 金融科技
 DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,solarisbank.com
+DOMAIN-SUFFIX,trade-republic.com
+DOMAIN-SUFFIX,scalable.capital
+DOMAIN-SUFFIX,finanzcheck.de
+DOMAIN-SUFFIX,check24.de
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,revolut.com
+DOMAIN-SUFFIX,paypal.de
+DOMAIN-SUFFIX,klarna.com
+
+##################################
+# 📡 电信运营商
+##################################
+# Deutsche Telekom / T-Mobile
 DOMAIN-SUFFIX,telekom.de
 DOMAIN-SUFFIX,t-mobile.de
+DOMAIN-SUFFIX,t-online.de
+
+# Vodafone Germany
 DOMAIN-SUFFIX,vodafone.de
+DOMAIN-SUFFIX,arcor.de
+DOMAIN-SUFFIX,gigacube.de
+
+# O2 / Telefónica Germany
 DOMAIN-SUFFIX,o2online.de
+DOMAIN-SUFFIX,telefonica.de
+DOMAIN-SUFFIX,blau.de
+DOMAIN-SUFFIX,aldi-talk.de
+DOMAIN-SUFFIX,netzclub.net
+
+# E-Plus (并入 O2，但部分域名仍在用)
 DOMAIN-SUFFIX,eplus.de
-DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,base.de
+
+# 其他电信 / 宽带
+DOMAIN-SUFFIX,1und1.de
+DOMAIN-SUFFIX,1und1.com
+DOMAIN-SUFFIX,drillisch.de
+DOMAIN-SUFFIX,congstar.de
+DOMAIN-SUFFIX,unitymedia.de
+DOMAIN-SUFFIX,vodafonekabel.de
+
+##################################
+# 📌 其他支付 / 金融服务
+##################################
+DOMAIN-SUFFIX,giropay.de
+DOMAIN-SUFFIX,sofort.com
+DOMAIN-SUFFIX,sofort.de
+DOMAIN-SUFFIX,applepay.de
+DOMAIN-SUFFIX,googlepay.de
