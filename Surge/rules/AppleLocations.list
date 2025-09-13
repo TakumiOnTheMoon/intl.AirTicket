@@ -1,8 +1,47 @@
-# NAME: Apple Driver Location
+# NAME: Apple Driver & Location
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2024-12-11
+# UPDATED: 2025-09-13
+# DESCRIPTION: Apple 定位、配置、地图、驱动相关服务域名
+
+##################################
+# 🍏 Apple 通用
+##################################
 DOMAIN-KEYWORD,apple
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+
+##################################
+# 📍 定位 / 查找服务
+##################################
 DOMAIN-SUFFIX,ls.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,configuration.ls.apple.com
+DOMAIN-SUFFIX,findmyiphone.com
+DOMAIN-SUFFIX,findmy.com
+
+##################################
+# 🌍 地图 / 地理位置
+##################################
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,mapkit.apple.com
+DOMAIN-SUFFIX,maps.apple.com
+
+##################################
+# 🔒 配置 / 校验
+##################################
+DOMAIN-SUFFIX,mdmenrollment.apple.com
+DOMAIN-SUFFIX,mdmcert.download
+DOMAIN-SUFFIX,configuration.apple.com
+
+##################################
+# 🌐 内容分发网络（CDN）
+##################################
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamaitechnologies.com
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,edgesuite.net
 DOMAIN-SUFFIX,akamai.net
