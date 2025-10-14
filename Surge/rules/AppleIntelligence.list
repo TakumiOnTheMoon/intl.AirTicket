@@ -1,0 +1,8 @@
+# NAME: Apple Intelligence
+# AUTHOR: TakumiOnThemoon
+# UPDATED: 2025-10-14
+# DESCRIPTION: Apple AI
+
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-KEYWORD,apple-relay
