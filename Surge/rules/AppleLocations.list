@@ -4,15 +4,6 @@
 # DESCRIPTION: Apple 定位、配置、地图、驱动相关服务域名
 
 ##################################
-# 🍏 Apple 通用
-##################################
-DOMAIN-KEYWORD,apple
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,cdn-apple.com
-
-##################################
 # 📍 定位 / 查找服务
 ##################################
 DOMAIN-SUFFIX,ls.apple.com
