@@ -1,7 +1,9 @@
+#########################################
 # NAME: DE Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
 # UPDATED: 2025-09-13
 # DESCRIPTION: 德国主要银行、数字银行、支付平台、电信运营商域名代理规则清单
+#########################################
 
 ##################################
 # 🏦 银行 / 金融机构
@@ -74,3 +76,5 @@ DOMAIN-SUFFIX,sofort.com
 DOMAIN-SUFFIX,sofort.de
 DOMAIN-SUFFIX,applepay.de
 DOMAIN-SUFFIX,googlepay.de
+################## EOF ##################
+
