@@ -1,7 +1,9 @@
+#########################################
 # NAME: US Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
 # UPDATED: 2025-09-13
 # DESCRIPTION: 美国主要银行、电信运营商、征信机构域名代理规则清单
+#########################################
 
 ##################################
 # 🏦 美国主要银行
@@ -82,3 +84,4 @@ DOMAIN-SUFFIX,qwest.net
 
 # Frontier
 DOMAIN-SUFFIX,frontier.com
+################## EOF ##################
