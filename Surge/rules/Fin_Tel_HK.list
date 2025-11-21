@@ -1,7 +1,9 @@
+#########################################
 # NAME: HK Financial & Telecommunication
 # AUTHOR: TakumiOnThemoon
 # UPDATED: 2025-09-13
 # DESCRIPTION: 香港主要银行、数字银行、征信机构、电信运营商域名代理规则清单
+#########################################
 
 ##################################
 # 🏦 香港主要银行
@@ -61,3 +63,4 @@ DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopus.com
 DOMAIN-SUFFIX,tapngo.com.hk
 DOMAIN-SUFFIX,ppshk.com
+################## EOF ##################
