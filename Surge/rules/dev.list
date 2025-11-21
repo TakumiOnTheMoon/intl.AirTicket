@@ -4,9 +4,11 @@
 # UPDATED: 2025-09-13
 # DESCRIPTION: 开发工具
 #########################################
-
-.dockerstatic.com
-.docker.io
-.cloudflare.docker.com
-.docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN,registry-1.docker.io
+DOMAIN,auth.docker.io
+DOMAIN,production.cloudflare.docker.com
+DOMAIN-SUFFIX,dockerstatic.com
+DOMAIN-SUFFIX,cloudflare.docker.com
+DOMAIN-SUFFIX,docker.com
 ################## EOF ##################
