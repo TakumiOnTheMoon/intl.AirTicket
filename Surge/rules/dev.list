@@ -3,3 +3,5 @@
 # UPDATED: 2025-11-21
 # DESCRIPTION: DevTools
 .docker.io
+.cloudflare.docker.com
+.docker.com
