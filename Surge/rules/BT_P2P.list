@@ -1,0 +1,86 @@
+#########################################
+# NAME: BT & P2P
+# AUTHOR: TakumiOnThemoon
+# UPDATED: 2025-11-29
+# DESCRIPTION:
+#   BitTorrent / PT / P2P 相关域名规则
+#   建议策略：DIRECT（避免走代理导致带宽浪费）
+#########################################
+
+# ======================================
+# 基础关键字匹配（最常用，命中率最高）
+# ======================================
+
+DOMAIN-KEYWORD,tracker
+DOMAIN-KEYWORD,announce
+DOMAIN-KEYWORD,peer
+DOMAIN-KEYWORD,seed
+DOMAIN-KEYWORD,torrent
+
+# ======================================
+# 公共 Tracker（可按需扩展）
+# ======================================
+
+DOMAIN-SUFFIX,opentrackr.org
+DOMAIN-SUFFIX,openbittorrent.com
+DOMAIN-SUFFIX,openbittorrent.com
+DOMAIN-SUFFIX,1337x.to
+DOMAIN-SUFFIX,open.tracker.cl
+DOMAIN-SUFFIX,tracker.openbittorrent.com
+DOMAIN-SUFFIX,tracker.opentrackr.org
+DOMAIN-SUFFIX,tracker.tiny-vps.com
+DOMAIN-SUFFIX,tracker.moeking.me
+DOMAIN-SUFFIX,tracker1.bt.moack.co.kr
+DOMAIN-SUFFIX,tracker.publicbt.com
+DOMAIN-SUFFIX,tracker.deluxebits.com
+DOMAIN-SUFFIX,tracker1.itzmx.com
+DOMAIN-SUFFIX,tracker2.itzmx.com
+DOMAIN-SUFFIX,tracker3.itzmx.com
+DOMAIN-SUFFIX,tracker4.itzmx.com
+DOMAIN-SUFFIX,tracker1.myporn.club
+
+# ======================================
+# 区块链 / Web3 类 DHT/节点（部分 BT 客户端会请求）
+# ======================================
+
+DOMAIN-SUFFIX,biglybt.com
+DOMAIN-SUFFIX,vuze.com
+
+# ======================================
+# 海外常用 PT（按需启用）
+# ======================================
+
+# DOMAIN-SUFFIX,hdbits.org
+# DOMAIN-SUFFIX,broadcasthe.net
+# DOMAIN-SUFFIX,hdtorrents.org
+# DOMAIN-SUFFIX,awesome-hd.me
+
+# ======================================
+# 中文常见 PT（按需启用）
+# ======================================
+
+# DOMAIN-SUFFIX,m-team.cc
+# DOMAIN-SUFFIX,ourbits.club
+# DOMAIN-SUFFIX,pterclub.com
+# DOMAIN-SUFFIX,hdbd.us
+# DOMAIN-SUFFIX,chdbits.co
+# DOMAIN-SUFFIX,lemonhd.org
+# DOMAIN-SUFFIX,totheglory.im
+
+# ======================================
+# 动漫 / ACG（部分支持 BT）
+# ======================================
+
+DOMAIN-SUFFIX,nyaa.si
+DOMAIN-SUFFIX,sukebei.nyaa.si
+DOMAIN-SUFFIX,animetosho.org
+
+# ======================================
+# 辅助相关服务（推荐保留）
+# ======================================
+
+DOMAIN-SUFFIX,dht.transmissionbt.com
+DOMAIN-SUFFIX,dht.aelitis.com
+DOMAIN-SUFFIX,dht.ipv6tracker.org
+
+################## EOF ##################
