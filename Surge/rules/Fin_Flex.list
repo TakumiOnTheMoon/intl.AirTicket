@@ -1,83 +1,69 @@
-# =========================================
-# Fin_Flex_Finance.list
-# NAME:Flexible Financial Services
-# AUTHOR: TakumiOnThemoon
-# DESCRIPTION: 数字货币服务，灵活金融服务
-# =========================================
+#########################################
+# NAME: Financial Flexible Services
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2025-12-15
+# DESCRIPTION: 灵活金融服务规则清单（支付/金融科技/交易所）
+#########################################
 
-# =================
-# Crypto Exchanges
-# =================
+##################################
+# 支付平台 / 金融科技
+##################################
+# PayPal / Venmo
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,venmo.com
 
-# Binance
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.us
-DOMAIN-SUFFIX,bnappzh.co
-DOMAIN-SUFFIX,binancecdn.com
-DOMAIN-SUFFIX,bntrace.com
+# Stripe
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,stripepayments.com
+
+# Square / Cash App
+DOMAIN-SUFFIX,squareup.com
+DOMAIN-SUFFIX,cash.app
+DOMAIN-SUFFIX,cash.me
+
+##################################
+# 数字货币交易所（Crypto / Web / App）
+##################################
+# Kraken
+DOMAIN-SUFFIX,kraken.com
 
 # Coinbase
 DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coinbaseusercontent.com
-DOMAIN-SUFFIX,cbhq.net
 
-# Kraken
-DOMAIN-SUFFIX,kraken.com
-DOMAIN-SUFFIX,krakenapi.com
-DOMAIN-SUFFIX,krkcdn.com
+# Binance
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.us
 
-# OKX
-DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okxcdn.com
+# Gemini
+DOMAIN-SUFFIX,gemini.com
 
-# Bybit
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,bybitglobal.com
+# FTX (历史备用域名)
+DOMAIN-SUFFIX,ftx.com
 
 # Bitstamp
 DOMAIN-SUFFIX,bitstamp.net
 
-# Gate.io
-DOMAIN-SUFFIX,gate.io
-DOMAIN-SUFFIX,gateimg.com
-
-# KuCoin
-DOMAIN-SUFFIX,kucoin.com
-DOMAIN-SUFFIX,kcsapi.com
-
-
-# =================
-# PayPal (Multi-Region)
-# =================
-
-DOMAIN-SUFFIX,paypal.com
-DOMAIN-SUFFIX,paypalobjects.com
-DOMAIN-SUFFIX,paypal.me
-DOMAIN-SUFFIX,pypl.com
-DOMAIN-SUFFIX,braintreepayments.com
-DOMAIN-SUFFIX,braintreegateway.com
-DOMAIN-SUFFIX,venmo.com
-
-
-# =================
-# American Express
-# =================
-
+##################################
+# 美国信用卡与银行灵活服务
+##################################
 DOMAIN-SUFFIX,americanexpress.com
 DOMAIN-SUFFIX,amex.com
-DOMAIN-SUFFIX,aexp.com
-DOMAIN-SUFFIX,axp.com
-DOMAIN-SUFFIX,globalnetwork.americanexpress.com
-DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,aexp-static.com
 
+# 其他金融科技接口（可扩展）
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wise.com
 
-# =================
-# Risk / Bot / Auth
-# =================
+##################################
+# 交易 API / 风控相关（灵活服务）
+##################################
+DOMAIN-SUFFIX,openapi.com
+DOMAIN-SUFFIX,webhook.com
+DOMAIN-SUFFIX,fintechapi.com
 
-DOMAIN-SUFFIX,arkoselabs.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,perimeterx.net
-DOMAIN-SUFFIX,px-cdn.net
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-SUFFIX,hcaptcha.com
+##################
+# EOF
+##################
