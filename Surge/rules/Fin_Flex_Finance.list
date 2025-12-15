@@ -1,0 +1,83 @@
+# =========================================
+# Fin_Flex_Finance.list
+# NAME:Flexible Financial Services
+# AUTHOR: TakumiOnThemoon
+# DESCRIPTION: 数字货币服务，灵活金融服务
+# =========================================
+
+# =================
+# Crypto Exchanges
+# =================
+
+# Binance
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,binancecdn.com
+DOMAIN-SUFFIX,bntrace.com
+
+# Coinbase
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbaseusercontent.com
+DOMAIN-SUFFIX,cbhq.net
+
+# Kraken
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,krakenapi.com
+DOMAIN-SUFFIX,krkcdn.com
+
+# OKX
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okxcdn.com
+
+# Bybit
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybitglobal.com
+
+# Bitstamp
+DOMAIN-SUFFIX,bitstamp.net
+
+# Gate.io
+DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,gateimg.com
+
+# KuCoin
+DOMAIN-SUFFIX,kucoin.com
+DOMAIN-SUFFIX,kcsapi.com
+
+
+# =================
+# PayPal (Multi-Region)
+# =================
+
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,paypal.me
+DOMAIN-SUFFIX,pypl.com
+DOMAIN-SUFFIX,braintreepayments.com
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,venmo.com
+
+
+# =================
+# American Express
+# =================
+
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,aexp.com
+DOMAIN-SUFFIX,axp.com
+DOMAIN-SUFFIX,globalnetwork.americanexpress.com
+DOMAIN-SUFFIX,online-metrix.net
+
+
+# =================
+# Risk / Bot / Auth
+# =================
+
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,perimeterx.net
+DOMAIN-SUFFIX,px-cdn.net
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,hcaptcha.com
