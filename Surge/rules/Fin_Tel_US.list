@@ -1,12 +1,12 @@
 #########################################
 # NAME: US Financial & Telecommunication
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2025-09-13
-# DESCRIPTION: 美国主要银行、电信运营商、征信机构域名代理规则清单
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2025-12-15
+# DESCRIPTION: 美国主要银行、券商、电信运营商、征信机构域名代理规则清单
 #########################################
 
 ##################################
-# 🏦 美国主要银行
+# 美国主要银行
 ##################################
 DOMAIN-SUFFIX,bankofamerica.com
 DOMAIN-SUFFIX,bofa.com
@@ -37,7 +37,38 @@ DOMAIN-SUFFIX,regions.com
 DOMAIN-SUFFIX,sofi.com
 
 ##################################
-# 🔐 征信与金融服务
+# 美国主要券商（Brokerages）
+##################################
+# 传统券商
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,fidelityinternational.com
+DOMAIN-SUFFIX,vanguard.com
+DOMAIN-SUFFIX,etrade.com
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,merrilledge.com
+DOMAIN-SUFFIX,ml.com
+DOMAIN-SUFFIX,youinvest.com
+
+# App-first / 新型券商
+DOMAIN-SUFFIX,robinhood.com
+DOMAIN-SUFFIX,rbnhd.com
+DOMAIN-SUFFIX,webull.com
+DOMAIN-SUFFIX,webullapp.com
+DOMAIN-SUFFIX,public.com
+DOMAIN-SUFFIX,m1finance.com
+DOMAIN-SUFFIX,allyinvest.com
+DOMAIN-SUFFIX,firstrade.com
+DOMAIN-SUFFIX,tradestation.com
+DOMAIN-SUFFIX,tastytrade.com
+DOMAIN-SUFFIX,sofi.com
+
+# Robo-Advisors
+DOMAIN-SUFFIX,betterment.com
+DOMAIN-SUFFIX,wealthfront.com
+
+##################################
+# 征信与金融服务
 ##################################
 DOMAIN-SUFFIX,equifax.com
 DOMAIN-SUFFIX,experian.com
@@ -46,7 +77,7 @@ DOMAIN-SUFFIX,myfico.com
 DOMAIN-SUFFIX,fico.com
 
 ##################################
-# 📡 电信运营商
+# 电信运营商
 ##################################
 # Verizon
 DOMAIN-SUFFIX,verizon.com
@@ -86,6 +117,16 @@ DOMAIN-SUFFIX,qwest.net
 # Frontier
 DOMAIN-SUFFIX,frontier.com
 
-# Ultar
+# MVNO / 虚拟运营商
 DOMAIN-SUFFIX,ultramobile.com
-################## EOF ##################
+DOMAIN-SUFFIX,tello.com
+DOMAIN-SUFFIX,mintmobile.com
+DOMAIN-SUFFIX,usmobile.com
+DOMAIN-SUFFIX,visible.com
+DOMAIN-SUFFIX,fi.google.com
+DOMAIN-SUFFIX,ting.com
+DOMAIN-SUFFIX,boostmobile.com
+
+##################
+# EOF
+##################
