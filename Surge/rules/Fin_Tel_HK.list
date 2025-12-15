@@ -1,66 +1,82 @@
 #########################################
 # NAME: HK Financial & Telecommunication
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2025-09-13
-# DESCRIPTION: 香港主要银行、数字银行、征信机构、电信运营商域名代理规则清单
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2025-12-15
+# DESCRIPTION: 香港主要银行、券商、电信及虚拟运营商域名代理规则清单
 #########################################
 
 ##################################
-# 🏦 香港主要银行
+# 香港主要银行 / 金融机构
 ##################################
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,hangseng.com
-DOMAIN-SUFFIX,boc.hk
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,boc.cn
 DOMAIN-SUFFIX,standardchartered.com.hk
-DOMAIN-SUFFIX,sc.com
-DOMAIN-SUFFIX,dahsing.com
+DOMAIN-SUFFIX,citibank.com.hk
 DOMAIN-SUFFIX,dbs.com.hk
-DOMAIN-SUFFIX,cncbinternational.com
-DOMAIN-SUFFIX,ocbcwhhk.com
-DOMAIN-SUFFIX,icbcasia.com
-DOMAIN-SUFFIX,bankcomm.com.hk
+DOMAIN-SUFFIX,dbs.com
+DOMAIN-SUFFIX,ocbc.com.hk
+DOMAIN-SUFFIX,bea.com
+DOMAIN-SUFFIX,bea.com.hk
+DOMAIN-SUFFIX,fubonbank.com.hk
+DOMAIN-SUFFIX,scotiabank.com
 DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,za.bank
-DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,livi.com.hk
+DOMAIN-SUFFIX,weLab.bank
+DOMAIN-SUFFIX,weLab.co
 DOMAIN-SUFFIX,antbank.hk
-DOMAIN-SUFFIX,wechatpay.com.hk
-DOMAIN-SUFFIX,alipay.hk
 
 ##################################
-# 🔐 信用卡 / 金融服务
+# 香港 / 国际券商（常用）
 ##################################
-DOMAIN-SUFFIX,americanexpress.com.hk
-DOMAIN-SUFFIX,citicards.com.hk
-DOMAIN-SUFFIX,aeon.com.hk
-DOMAIN-SUFFIX,uob.com.hk
+# 本地及港美股券商
+DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,moomoo.com
+DOMAIN-SUFFIX,moomoo.com.hk
+DOMAIN-SUFFIX,tigerbrokers.com
+DOMAIN-SUFFIX,itiger.com
+DOMAIN-SUFFIX,brightmart.com
 
 ##################################
-# 📡 电信运营商
+# 香港电信运营商（MNO）
 ##################################
-# 中资 & 本地主要运营商
-DOMAIN-SUFFIX,smartone.com
-DOMAIN-SUFFIX,csl.com.hk
-DOMAIN-SUFFIX,hkcsl.com
-DOMAIN-SUFFIX,one2free.com
-DOMAIN-SUFFIX,three.com.hk
-DOMAIN-SUFFIX,china-mobile.com
-DOMAIN-SUFFIX,cuniq.com
+DOMAIN-SUFFIX,csl.hk
 DOMAIN-SUFFIX,1010.com.hk
-DOMAIN-SUFFIX,cmhk.com
-
-# 固网/宽带服务
 DOMAIN-SUFFIX,hkt.com
 DOMAIN-SUFFIX,netvigator.com
-DOMAIN-SUFFIX,pccw.com
-DOMAIN-SUFFIX,hkbnes.net
-DOMAIN-SUFFIX,hkbnes.com
-DOMAIN-SUFFIX,ihkt.com
+DOMAIN-SUFFIX,smartone.com
+DOMAIN-SUFFIX,three.com.hk
+DOMAIN-SUFFIX,3hk.com
+DOMAIN-SUFFIX,cmhk.com
+DOMAIN-SUFFIX,chinaunicom.com.hk
 
 ##################################
-# 📌 其他支付/金融科技
+# 香港虚拟运营商（MVNO）
 ##################################
+DOMAIN-SUFFIX,sunmobile.com.hk
+DOMAIN-SUFFIX,soSIM.com
+DOMAIN-SUFFIX,birdie.com.hk
+DOMAIN-SUFFIX,yueme.hk
+DOMAIN-SUFFIX,lucky-sim.com
+DOMAIN-SUFFIX,clubsim.com.hk
+DOMAIN-SUFFIX,mySIM.hk
+DOMAIN-SUFFIX,csim.hk
+DOMAIN-SUFFIX,cmhkmobile.com
+
+##################################
+# 支付 / 金融科技（HK 常用）
+##################################
+DOMAIN-SUFFIX,alipayhk.com
+DOMAIN-SUFFIX,wechatpay.hk
 DOMAIN-SUFFIX,octopus.com.hk
-DOMAIN-SUFFIX,octopus.com
-DOMAIN-SUFFIX,tapngo.com.hk
-DOMAIN-SUFFIX,ppshk.com
-################## EOF ##################
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,payme.hsbc
+
+##################
+# EOF
+##################
