@@ -1,78 +1,72 @@
 #########################################
 # NAME: CA Financial & Telecommunication
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2025-09-13
-# DESCRIPTION: 加拿大主要银行、数字银行、支付平台、电信运营商域名代理规则清单
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2025-12-15
+# DESCRIPTION: 加拿大本地银行、券商、电信及虚拟运营商规则
 #########################################
 
 ##################################
-# 🏦 银行 / 金融机构
+# 加拿大主要银行（Big Five + Local）
 ##################################
 DOMAIN-SUFFIX,rbc.com
 DOMAIN-SUFFIX,royalbank.com
 DOMAIN-SUFFIX,td.com
-DOMAIN-SUFFIX,tdcanadatrust.com
+DOMAIN-SUFFIX,tdbank.ca
 DOMAIN-SUFFIX,scotiabank.com
 DOMAIN-SUFFIX,bmo.com
-DOMAIN-SUFFIX,bmo.com.ca
 DOMAIN-SUFFIX,cibc.com
 DOMAIN-SUFFIX,nationalbank.ca
-DOMAIN-SUFFIX,desjardins.com
-DOMAIN-SUFFIX,simplii.com
-DOMAIN-SUFFIX,tangerine.ca
-DOMAIN-SUFFIX,hsbc.ca
+DOMAIN-SUFFIX,nbc.ca
 DOMAIN-SUFFIX,laurentianbank.ca
+DOMAIN-SUFFIX,desjardins.com
 DOMAIN-SUFFIX,eqbank.ca
+
+##################################
+# 加拿大本地券商（仅 CA）
+##################################
+DOMAIN-SUFFIX,questrade.com
 DOMAIN-SUFFIX,wealthsimple.com
+DOMAIN-SUFFIX,investorsgroup.com
+DOMAIN-SUFFIX,nbdb.ca
+DOMAIN-SUFFIX,disnat.com
 
 ##################################
-# 🔐 金融科技 / 支付服务
+# 加拿大电信运营商（MNO）
 ##################################
-DOMAIN-SUFFIX,moneris.com
-DOMAIN-SUFFIX,interac.ca
-DOMAIN-SUFFIX,koho.ca
-DOMAIN-SUFFIX,mogo.ca
-DOMAIN-SUFFIX,shakepay.com
-DOMAIN-SUFFIX,ndax.io
-DOMAIN-SUFFIX,wealthonebankofcanada.com
-DOMAIN-SUFFIX,paypal.ca
-DOMAIN-SUFFIX,wise.com
-DOMAIN-SUFFIX,revolut.com
-DOMAIN-SUFFIX,neo.cc
-
-##################################
-# 📡 电信运营商
-##################################
-# 三大运营商
-DOMAIN-SUFFIX,bell.ca
+# Rogers
 DOMAIN-SUFFIX,rogers.com
-DOMAIN-SUFFIX,telus.com
-
-# Bell 子品牌
-DOMAIN-SUFFIX,virginplus.ca
-DOMAIN-SUFFIX,pcmobile.ca
-DOMAIN-SUFFIX,lucky.ca
-
-# Rogers 子品牌
+DOMAIN-SUFFIX,rogerswireless.com
 DOMAIN-SUFFIX,fido.ca
-DOMAIN-SUFFIX,chatrwireless.com
-DOMAIN-SUFFIX,freedommobile.ca
 
-# Telus 子品牌
+# Bell
+DOMAIN-SUFFIX,bell.ca
+DOMAIN-SUFFIX,bellmedia.ca
+DOMAIN-SUFFIX,virginplus.ca
+
+# Telus
+DOMAIN-SUFFIX,telus.com
 DOMAIN-SUFFIX,koodomobile.com
 DOMAIN-SUFFIX,publicmobile.ca
 
-# 其他本地运营商
-DOMAIN-SUFFIX,videotron.com
-DOMAIN-SUFFIX,eastlink.ca
-DOMAIN-SUFFIX,sasktel.com
+# Shaw
 DOMAIN-SUFFIX,shaw.ca
+DOMAIN-SUFFIX,freedommobile.ca
 
 ##################################
-# 📌 其他支付 / 金融服务
+# 加拿大虚拟运营商 / 子品牌（MVNO）
 ##################################
-DOMAIN-SUFFIX,applepay.ca
-DOMAIN-SUFFIX,googlepay.ca
-DOMAIN-SUFFIX,squareup.com
-DOMAIN-SUFFIX,stripe.com
-################## EOF ##################
+DOMAIN-SUFFIX,chatrwireless.com
+DOMAIN-SUFFIX,zoomermobile.ca
+DOMAIN-SUFFIX,luckymobile.ca
+DOMAIN-SUFFIX,speakout7eleven.ca
+DOMAIN-SUFFIX,cityfone.net
+DOMAIN-SUFFIX,petro-canada.ca
+
+##################################
+# 加拿大本地支付网络
+##################################
+DOMAIN-SUFFIX,interac.ca
+
+##################
+# EOF
+##################
