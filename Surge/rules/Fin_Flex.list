@@ -23,6 +23,20 @@ DOMAIN-SUFFIX,squareup.com
 DOMAIN-SUFFIX,cash.app
 DOMAIN-SUFFIX,cash.me
 
+# Revolut
+DOMAIN-SUFFIX,revolut.com
+DOMAIN-SUFFIX,revolut.me
+DOMAIN-SUFFIX,revolutbusiness.com
+DOMAIN-SUFFIX,revolut.us
+DOMAIN-SUFFIX,revolutapp.com
+DOMAIN-SUFFIX,revolutapi.com
+
+# Wise (TransferWise)
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wiseapp.com
+DOMAIN-SUFFIX,wiseplatform.com
+
 ##################################
 # 数字货币交易所（Crypto / Web / App）
 ##################################
