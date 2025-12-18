@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,venmo.com
 DOMAIN,b.stats.paypal.com
 DOMAIN,app-analytics-services.com
+DOMAIN,analytics.adjust.com
 DOMAIN-SUFFIX,datadome.co
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,datadog.pool.ntp.org
