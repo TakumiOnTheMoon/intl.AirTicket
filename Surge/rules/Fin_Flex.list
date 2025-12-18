@@ -18,6 +18,7 @@ DOMAIN,analytics.adjust.com
 DOMAIN-SUFFIX,datadome.co
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,datadog.pool.ntp.org
+DOMAIN,browser-intake-us5-datadoghq.com
 
 # Stripe
 DOMAIN-SUFFIX,stripe.com
