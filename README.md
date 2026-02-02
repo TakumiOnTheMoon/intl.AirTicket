@@ -123,6 +123,7 @@ No guarantee is made regarding account safety or service availability.
 
 ---
 
-## 📄 License / 许可证
+## License / 许可证
 
-MIT License
+Licensed under the Apache License, Version 2.0 (Apache-2.0).
+See `LICENSE` for details.
