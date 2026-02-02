@@ -1,27 +1,79 @@
 # intl.AirTicket
 
-A curated Surge ruleset collection for international travel, financial services, and risk-sensitive platforms.  
-精心整理的 Surge 规则集合，适用于国际出行、金融服务和风控敏感平台。
+🌍 **Surge ruleset collection for international travel, finance, and risk-sensitive platforms**  
+✈️ 面向国际出行 / 金融 / 风控敏感平台的 Surge 规则集合集
 
 ---
 
-## ✨ Features / 特性
+## 📌 What is this? | 这是什么？
 
-- **Pure ruleset design / 纯规则设计**  
-  Rules only define *what to match*, not *how to route*  
-  规则仅定义“匹配哪些域名”，而不绑定具体策略。
+**intl.AirTicket** is a curated collection of **pure Surge rulesets** designed for:
 
-- **Finance-friendly / 金融友好**  
-  Optimized for crypto exchanges, PayPal, Amex, and other risk-sensitive services  
-  优化覆盖数字货币交易所、PayPal、美运等高风控服务。
+- International travel services  
+- Financial & payment platforms  
+- Telecom / identity-sensitive services  
+- Platforms with **strict anti-fraud and risk-control systems**
 
-- **Minimal & maintainable / 精简易维护**  
-  Prefer `DOMAIN-SUFFIX` over verbose subdomain rules  
-  尽量使用 `DOMAIN-SUFFIX`，避免冗余子域规则。
+**intl.AirTicket** 是一套**只包含规则、不包含策略**的 Surge ruleset 集合，适用于：
 
-- **Surge-first / Surge 优先**  
-  Designed and tested specifically for Surge  
-  专为 Surge 设计和测试，保证兼容性。
+- 国际航旅 / 出行平台  
+- 金融、支付、加密资产相关服务  
+- 电信、身份敏感类平台  
+- **风控严格、容易触发验证/封号的平台**
+
+> ⚠️ This project provides **rulesets only**  
+> It never binds policies, never defines proxy groups, and never forces routing decisions.
+
+> ⚠️ 本项目**只提供规则集**  
+> 不绑定策略、不定义代理组、不干涉你的路由选择。
+
+---
+
+## 🎯 Design Philosophy | 设计理念
+
+### 1️⃣ Ruleset ≠ Policy（规则 ≠ 策略）
+- Rulesets **only define matching conditions**
+- No `select`, no `url-test`, no policy binding
+- All routing logic stays in your Surge configuration
+
+规则集**只负责“匹配”**，不负责：
+- 选节点
+- 切策略
+- 自动测速或切换
+
+---
+
+### 2️⃣ Prefer coarse granularity（优先使用粗粒度规则）
+- `DOMAIN-SUFFIX` first
+- Avoid `DOMAIN-KEYWORD` unless strictly necessary
+- Fine-grained rules are used **only when**:
+  - A CDN / risk-control domain is shared across platforms
+  - `DOMAIN-SUFFIX` would cause obvious false positives
+
+优先使用：
+- `DOMAIN-SUFFIX`
+
+仅在以下情况才拆细：
+- 跨平台共用的 CDN / 风控域名
+- 使用后缀会产生明显误伤
+
+---
+
+### 3️⃣ Stability over automation (for finance)  
+### 金融场景：稳定优先于自动化
+
+For financial and risk-sensitive platforms, this project **strongly recommends**:
+
+- ❌ Avoid `url-test`, `fallback`, `load-balance`
+- ✅ Use **manual `select`**
+- ✅ Keep **Web & App traffic on the same exit IP**
+- ✅ Prefer long-lived, low-churn nodes
+
+对于金融 / 风控平台，强烈建议：
+- ❌ 不使用自动测速 / 自动切换
+- ✅ 手动选择出口
+- ✅ 网页端 & App 端保持同一出口
+- ✅ 使用稳定、长期不变的节点
 
 ---
 
@@ -85,16 +137,6 @@ These practices significantly reduce:
 - frequent CAPTCHA / 验证码频繁  
 - account reviews / 账户风控审查  
 - silent request failures / 请求静默失败
-
----
-
-## 🧪 Tested Platforms (Non-Exhaustive) / 已测试平台（非详尽）
-
-- Crypto exchanges (Kraken, Binance, Coinbase…)  
-  数字货币交易所（Kraken、Binance、Coinbase…）
-- PayPal (multi-region accounts) / 多地区 PayPal 账号
-- American Express / 美运卡
-- International travel & airline services / 国际出行及航空服务
 
 ---
 
