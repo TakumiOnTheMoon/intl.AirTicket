@@ -11,4 +11,15 @@ DOMAIN-SUFFIX,apple-relay.fastly-edge.com
 DOMAIN-SUFFIX,cp4.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+
+# ---------- Apple Podcasts ----------
+DOMAIN-SUFFIX,podcasts.apple.com
+DOMAIN-SUFFIX,*.podcasts.apple.com
+DOMAIN-SUFFIX,podcasts-services.apple.com
+
+# ---------- Apple News ----------
+DOMAIN-SUFFIX,news.apple.com
+DOMAIN-SUFFIX,*.news.apple.com
+DOMAIN-SUFFIX,*.apple.news
+
 ################## EOF ##################
