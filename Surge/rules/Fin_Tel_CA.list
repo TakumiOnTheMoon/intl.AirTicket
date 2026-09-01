@@ -1,7 +1,7 @@
 #########################################
 # NAME: CA Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2025-12-15
+# UPDATED: 2026-09-01
 # DESCRIPTION: 加拿大本地银行、券商、电信及虚拟运营商规则
 #########################################
 
@@ -12,8 +12,6 @@ DOMAIN-SUFFIX,rbc.com
 DOMAIN-SUFFIX,royalbank.com
 DOMAIN-SUFFIX,td.com
 DOMAIN-SUFFIX,tdbank.ca
-DOMAIN-SUFFIX,scotiabank.com
-DOMAIN-SUFFIX,bmo.com
 DOMAIN-SUFFIX,cibc.com
 DOMAIN-SUFFIX,nationalbank.ca
 DOMAIN-SUFFIX,nbc.ca

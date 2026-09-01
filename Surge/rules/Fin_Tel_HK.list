@@ -1,7 +1,7 @@
 #########################################
 # NAME: HK Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2025-12-15
+# UPDATED: 2026-09-01
 # DESCRIPTION: 香港主要银行、券商、电信及虚拟运营商域名代理规则清单
 #########################################
 
@@ -20,7 +20,6 @@ DOMAIN-SUFFIX,ocbc.com.hk
 DOMAIN-SUFFIX,bea.com
 DOMAIN-SUFFIX,bea.com.hk
 DOMAIN-SUFFIX,fubonbank.com.hk
-DOMAIN-SUFFIX,scotiabank.com
 DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,za.bank
 DOMAIN-SUFFIX,livi.com.hk
@@ -74,8 +73,6 @@ DOMAIN-SUFFIX,alipayhk.com
 DOMAIN-SUFFIX,wechatpay.hk
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopuscards.com
-DOMAIN-SUFFIX,wise.com
-DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,payme.hsbc
 
 ##################

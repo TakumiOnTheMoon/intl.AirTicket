@@ -10,6 +10,8 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 - Sanitized `Ticket.conf` into a reusable template with local-only node and subscription placeholders.
 - Added encrypted DNS defaults, a flexible policy group, and references for the finance-flexible and Apple Intelligence rulesets.
 - Removed personal-network matching and an overly broad high-port download rule to reduce accidental routing.
+- Consolidated multi-region financial services in `Fin_Flex.list` and expanded the template's manual flexible policy group to include CA, UK, and DE exits.
+- Removed broad third-party analytics/API domains and redundant country-list entries from finance rulesets.
 ### Fixed
 ### Removed
 

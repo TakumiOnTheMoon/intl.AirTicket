@@ -1,7 +1,7 @@
 #########################################
 # NAME: US Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2026-03-16
+# UPDATED: 2026-09-01
 # DESCRIPTION: 美国主要银行、券商、电信运营商、征信机构域名代理规则清单
 #########################################
 
@@ -26,8 +26,6 @@ DOMAIN-SUFFIX,truist.com
 DOMAIN-SUFFIX,suntrust.com
 DOMAIN-SUFFIX,bbt.com
 DOMAIN-SUFFIX,ally.com
-DOMAIN-SUFFIX,americanexpress.com
-DOMAIN-SUFFIX,amex.com
 DOMAIN-SUFFIX,discover.com
 DOMAIN-SUFFIX,gs.com
 DOMAIN-SUFFIX,marcus.com
@@ -35,7 +33,6 @@ DOMAIN-SUFFIX,schwab.com
 DOMAIN-SUFFIX,53.com
 DOMAIN-SUFFIX,regions.com
 DOMAIN-SUFFIX,sofi.com
-DOMAIN-SUFFIX,bmo.com
 DOMAIN-SUFFIX,irs.gov
 DOMAIN-SUFFIX,id.me
 
@@ -64,7 +61,6 @@ DOMAIN-SUFFIX,allyinvest.com
 DOMAIN-SUFFIX,firstrade.com
 DOMAIN-SUFFIX,tradestation.com
 DOMAIN-SUFFIX,tastytrade.com
-DOMAIN-SUFFIX,sofi.com
 
 # Robo-Advisors
 DOMAIN-SUFFIX,betterment.com
@@ -79,15 +75,8 @@ DOMAIN-SUFFIX,transunion.com
 DOMAIN-SUFFIX,nav.com
 DOMAIN-SUFFIX,myfico.com
 DOMAIN-SUFFIX,fico.com
-DOMAIN-SUFFIX,revolut.com
-DOMAIN-SUFFIX,revolut.me
-DOMAIN-SUFFIX,revolutbusiness.com
 DOMAIN-SUFFIX,zellepay.com
 DOMAIN-SUFFIX,finicity.com
-DOMAIN-SUFFIX,finicityapi.com
-DOMAIN-SUFFIX,api.finicity.com
-DOMAIN-SUFFIX,portal.finicity.com
-DOMAIN-SUFFIX,auth.finicity.com
 DOMAIN-SUFFIX,creditkarma.com
 
 ##################################
@@ -109,7 +98,6 @@ DOMAIN-SUFFIX,bellsouth.net
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,sprint.com
 DOMAIN-SUFFIX,metropcs.com
-DOMAIN-SUFFIX,boostmobile.com
 
 # Comcast / Xfinity
 DOMAIN-SUFFIX,comcast.com

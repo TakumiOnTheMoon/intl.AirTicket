@@ -82,7 +82,7 @@ For financial and risk-sensitive platforms, this project **strongly recommends**
 Surge/  
 ├─ rules/  
 │  ├─ Fin_Tel_CA.list          # Base finance & telecom rules / 基础金融及电信规则  
-│  ├─ Fin_Flex_Finance.list    # Flexible finance services (crypto, PayPal, Amex) / 弹性金融规则  
+│  ├─ Fin_Flex.list            # Multi-region finance services (Amex, Wise, Revolut) / 跨国金融服务
 │  └─ ...                      # Other categorized rulesets / 其他分类规则  
 
 > Each ruleset is **self-contained** and intended to be referenced from Surge main configuration.  
@@ -95,7 +95,7 @@ Surge/
 ### 1️⃣ Reference ruleset in Surge / 在 Surge 中引用规则
 
 [Rule]  
-RULE-SET,Fin_Flex_Finance,FIN-FLEX
+RULE-SET,Fin_Flex,FIN-FLEX
 
 ### 2️⃣ Define flexible policy group / 定义策略组
 
@@ -104,6 +104,8 @@ FIN-FLEX = select, US-FIN, HK-FIN, SG-FIN, DIRECT
 
 - Switch routing **only at the policy level / 只在策略层切换**  
 - Ruleset files do **not** need to be modified when changing regions / 切换地区时无需修改规则文件
+
+For services with accounts in more than one country—such as American Express, Wise, Revolut, BMO, or Scotiabank—keep the service in `Fin_Flex.list` and manually select the exit country that matches the account currently in use. A domain rule cannot safely infer account jurisdiction from the browser session.
 
 ### Configuration template / 配置模板
 

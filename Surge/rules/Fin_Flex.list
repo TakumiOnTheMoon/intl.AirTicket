@@ -1,8 +1,8 @@
 #########################################
 # NAME: Financial Flexible Services
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2025-12-15
-# DESCRIPTION: 灵活金融服务规则清单（支付/金融科技/交易所）
+# UPDATED: 2026-09-01
+# DESCRIPTION: 跨国家/地区账户的金融服务；应由手动策略组选择与当前账户一致的出口
 #########################################
 
 ##################################
@@ -12,14 +12,6 @@
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,venmo.com
-DOMAIN,b.stats.paypal.com
-DOMAIN,app-analytics-services.com
-DOMAIN-SUFFIX,adjust.com
-DOMAIN-SUFFIX,datadome.co
-DOMAIN-SUFFIX,datadoghq.com
-DOMAIN-SUFFIX,datadog.pool.ntp.org
-DOMAIN,browser-intake-us5-datadoghq.com
-DOMAIN-SUFFIX,dyneti.com
 
 # Stripe
 DOMAIN-SUFFIX,stripe.com
@@ -45,6 +37,16 @@ DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,wiseapp.com
 DOMAIN-SUFFIX,wiseplatform.com
 
+# American Express（全球站点及地区路径；手动选择当前账户所属地区出口）
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,americanexpress.co.uk
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,aexp-static.com
+
+# BMO / Scotiabank（跨加拿大、美国及其他市场）
+DOMAIN-SUFFIX,bmo.com
+DOMAIN-SUFFIX,scotiabank.com
+
 ##################################
 # 数字货币交易所（Crypto / Web / App）
 ##################################
@@ -62,29 +64,8 @@ DOMAIN-SUFFIX,binance.us
 # Gemini
 DOMAIN-SUFFIX,gemini.com
 
-# FTX (历史备用域名)
-DOMAIN-SUFFIX,ftx.com
-
 # Bitstamp
 DOMAIN-SUFFIX,bitstamp.net
-
-##################################
-# 美国信用卡与银行灵活服务
-##################################
-DOMAIN-SUFFIX,americanexpress.com
-DOMAIN-SUFFIX,amex.com
-DOMAIN-SUFFIX,aexp-static.com
-
-# 其他金融科技接口（可扩展）
-DOMAIN-SUFFIX,transferwise.com
-DOMAIN-SUFFIX,wise.com
-
-##################################
-# 交易 API / 风控相关（灵活服务）
-##################################
-DOMAIN-SUFFIX,openapi.com
-DOMAIN-SUFFIX,webhook.com
-DOMAIN-SUFFIX,fintechapi.com
 
 ##################
 # EOF
