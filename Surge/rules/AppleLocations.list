@@ -1,7 +1,7 @@
 #########################################
 # NAME: Apple Driver & Location
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2025-09-13
+# UPDATED: 2026-09-01
 # DESCRIPTION: Apple 定位、配置、地图、驱动相关服务域名
 #########################################
 
@@ -28,14 +28,4 @@ DOMAIN-SUFFIX,mdmenrollment.apple.com
 DOMAIN-SUFFIX,mdmcert.download
 DOMAIN-SUFFIX,configuration.apple.com
 
-##################################
-# 🌐 内容分发网络（CDN）
-##################################
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,akamaiedge.net
-DOMAIN-SUFFIX,akamaitechnologies.com
-DOMAIN-SUFFIX,akamaized.net
-DOMAIN-SUFFIX,edgekey.net
-DOMAIN-SUFFIX,edgesuite.net
-DOMAIN-SUFFIX,akamai.net
 ################## EOF ##################

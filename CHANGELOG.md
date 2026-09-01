@@ -12,6 +12,7 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 - Removed personal-network matching and an overly broad high-port download rule to reduce accidental routing.
 - Consolidated multi-region financial services in `Fin_Flex.list` and expanded the template's manual flexible policy group to include CA, UK, and DE exits.
 - Removed broad third-party analytics/API domains and redundant country-list entries from finance rulesets.
+- Replaced broad BT/P2P keyword matching with explicit tracker and DHT domains, and narrowed Apple matching to owned or exact relay hostnames.
 ### Fixed
 ### Removed
 

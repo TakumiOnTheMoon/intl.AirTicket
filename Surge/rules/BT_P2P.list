@@ -1,21 +1,18 @@
 #########################################
 # NAME: BT & P2P
 # AUTHOR: TakumiOnThemoon
-# UPDATED: 2025-11-29
+# UPDATED: 2026-09-01
 # DESCRIPTION:
 #   BitTorrent / PT / P2P 相关域名规则
 #   建议策略：DIRECT（避免走代理导致带宽浪费）
 #########################################
 
 # ======================================
-# 基础关键字匹配（最常用，命中率最高）
+# 不启用通用关键字匹配
 # ======================================
 
-DOMAIN-KEYWORD,tracker
-DOMAIN-KEYWORD,announce
-DOMAIN-KEYWORD,peer
-DOMAIN-KEYWORD,seed
-DOMAIN-KEYWORD,torrent
+# `tracker`、`peer`、`seed`、`announce` 等关键字会误匹配非 P2P 服务。
+# 如确有需要，请在本地私有配置中按日志观察后添加精确 DOMAIN 规则。
 
 # ======================================
 # 公共 Tracker（可按需扩展）
@@ -23,11 +20,8 @@ DOMAIN-KEYWORD,torrent
 
 DOMAIN-SUFFIX,opentrackr.org
 DOMAIN-SUFFIX,openbittorrent.com
-DOMAIN-SUFFIX,openbittorrent.com
 DOMAIN-SUFFIX,1337x.to
 DOMAIN-SUFFIX,open.tracker.cl
-DOMAIN-SUFFIX,tracker.openbittorrent.com
-DOMAIN-SUFFIX,tracker.opentrackr.org
 DOMAIN-SUFFIX,tracker.tiny-vps.com
 DOMAIN-SUFFIX,tracker.moeking.me
 DOMAIN-SUFFIX,tracker1.bt.moack.co.kr
@@ -72,7 +66,6 @@ DOMAIN-SUFFIX,vuze.com
 # ======================================
 
 DOMAIN-SUFFIX,nyaa.si
-DOMAIN-SUFFIX,sukebei.nyaa.si
 DOMAIN-SUFFIX,animetosho.org
 
 # ======================================
