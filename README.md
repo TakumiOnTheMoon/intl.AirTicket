@@ -105,6 +105,10 @@ FIN-FLEX = select, US-FIN, HK-FIN, SG-FIN, DIRECT
 - Switch routing **only at the policy level / 只在策略层切换**  
 - Ruleset files do **not** need to be modified when changing regions / 切换地区时无需修改规则文件
 
+### Configuration template / 配置模板
+
+`Surge/conf/Ticket.conf` is a reusable example profile. It deliberately contains only commented personal-node placeholders and an example subscription URL. Replace those values only in a local, untracked profile; never commit proxy credentials, subscription URLs, local IP addresses, Host mappings, MITM certificates, or CA passphrases.
+
 ---
 
 ## 🧠 Design Philosophy / 设计理念
