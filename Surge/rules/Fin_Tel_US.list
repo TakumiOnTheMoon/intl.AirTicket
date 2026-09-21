@@ -129,6 +129,18 @@ DOMAIN-SUFFIX,fi.google.com
 DOMAIN-SUFFIX,ting.com
 DOMAIN-SUFFIX,boostmobile.com
 
+##################################
+# WI-FI Calling
+##################################
+# Ultra Mobile / T-Mobile Wi-Fi Calling ePDG 域名
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+
+# T-Mobile IMS 通信辅助域名
+DOMAIN-SUFFIX,msg.fi.google.com
+DOMAIN-SUFFIX,t-mobile.com
+
 ##################
 # EOF
 ##################
