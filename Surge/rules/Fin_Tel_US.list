@@ -35,10 +35,11 @@ DOMAIN-SUFFIX,regions.com
 DOMAIN-SUFFIX,sofi.com
 DOMAIN-SUFFIX,irs.gov
 DOMAIN-SUFFIX,id.me
-DOMAIN-SUFFIX,nubank.com.br
+DOMAIN-SUFFIX,nuapp.us
 DOMAIN-SUFFIX,nu.international
-DOMAIN-SUFFIX,nu.com.br
+DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,nu.com
+DOMAIN-SUFFIX,nubank.com.br
 
 ##################################
 # 美国主要券商（Brokerages）
