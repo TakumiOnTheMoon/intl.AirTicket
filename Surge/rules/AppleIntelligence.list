@@ -1,33 +1,37 @@
 #########################################
-# NAME: Apple Intelligence
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2026-09-01
+# NAME: Apple AI & APNs Push Integrated
+# UPDATED: 2026-10-25
 #########################################
 
-# Apple Intelligence, Siri & Private Cloud Compute
+# > 1. APNs Push & System Processes (解决 TG 等 App 后台不推送)
+PROCESS-NAME,apsd
+PROCESS-NAME,assistantd
+PROCESS-NAME,Siri
+PROCESS-NAME,BlackPowderInferenceExtension
+DOMAIN-SUFFIX,push.apple.com
+
+# > 2. Core Siri & Voice Services
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,api-siri-prod.apple.com
 DOMAIN,seed.siri.apple.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,cp4.cloudflare.com
-DOMAIN,apple-relay.mask.apple-dns.net
-DOMAIN,mask-api.icloud.com
-DOMAIN,mask-api.fe2.apple-dns.net
-DOMAIN,apple-relay.akamaized.net
-DOMAIN,apple-carry-relay.cloudflare.com
+DOMAIN,guzzoni.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
+
+# > 3. Apple Intelligence & Private Cloud Compute (PCC)
+DOMAIN-KEYWORD,apple-intelligence
+DOMAIN-KEYWORD,privatecloudcompute
 DOMAIN,gateway.icloud.com
 DOMAIN,probe.icloud.com
 DOMAIN,metrics.icloud.com
+DOMAIN,mask-api.icloud.com
 
-# ---------- Apple Podcasts ----------
-DOMAIN-SUFFIX,podcasts.apple.com
-DOMAIN-SUFFIX,podcasts-services.apple.com
-
-# ---------- Apple News ----------
-DOMAIN-SUFFIX,news.apple.com
-DOMAIN-SUFFIX,apple.news
-
+# > 4. Apple Private Relay & PCC Relay Nodes
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,apple-relay.akamaized.net
+DOMAIN,apple-carry-relay.cloudflare.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN,mask-api.fe2.apple-dns.net
 ################## EOF ##################
