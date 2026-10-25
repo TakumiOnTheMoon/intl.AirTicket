@@ -26,7 +26,6 @@ DOMAIN,probe.icloud.com
 DOMAIN,metrics.icloud.com
 DOMAIN,mask.icloud.com
 DOMAIN,mask-api.icloud.com
-DOMAIN-SUFFIX,rnote.com
 
 # > 4. Apple Private Relay & PCC Relay Nodes (加密中转与通道节点)
 DOMAIN,apple-relay.apple.com
