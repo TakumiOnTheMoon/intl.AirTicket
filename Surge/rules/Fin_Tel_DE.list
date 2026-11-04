@@ -26,6 +26,13 @@ DOMAIN-SUFFIX,bbva.de
 DOMAIN-SUFFIX,bbva.es
 DOMAIN-SUFFIX,bbva.com
 DOMAIN-SUFFIX,bbvaexperience.com
+DOMAIN-SUFFIX,bunq.com
+DOMAIN-SUFFIX,bunq.app
+DOMAIN-SUFFIX,bunq.net
+DOMAIN-SUFFIX,bunq-assets.com
+DOMAIN-SUFFIX,bunq-cdn.com
+DOMAIN,bunq.com
+DOMAIN,sp-push.com
 
 ############################
 # 德国本地券商（仅 DE）
@@ -74,5 +81,6 @@ DOMAIN-SUFFIX,freenet.de
 DOMAIN-SUFFIX,giropay.de
 DOMAIN-SUFFIX,eps-ueberweisung.de
 DOMAIN-SUFFIX,sofort.com
+DOMAIN-SUFFIX,payback.de
 
 ################## EOF ##################
