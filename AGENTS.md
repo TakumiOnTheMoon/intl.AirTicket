@@ -30,9 +30,19 @@ Before adding, removing, or changing a domain:
 ## Repository and data boundaries
 
 - Treat this file as the source of truth for repository-specific agent behavior. Read it before changing rules, configuration examples, or maintenance automation.
-- Keep personal Surge profiles and credentials outside the repository. Do not inspect external profiles unless the user explicitly authorizes it; when authorized, use them only for the requested check and never print, copy, commit, or otherwise expose their contents.
+- Keep personal Surge profiles and credentials outside the repository. Do not inspect external profiles unless the user explicitly authorizes it; when authorized, use them only for the requested check and never print, copy, commit, or otherwise expose their contents. Never make an external profile a default edit target.
 - Do not add local machine files, credentials, subscription URLs, or user-specific routing policy to the repository.
 - Preserve the existing `Surge/rules/` paths unless a migration includes updates to all references and is explicitly justified; consumers may depend on these paths.
+
+## Surge documentation and live-profile safety
+
+- Before changing Surge syntax in rules or configuration examples, consult the official LLM documentation index at <https://nssurge.com/llms.txt> and follow its relevant current documentation. The index is a reference, not a substitute for the specific feature documentation.
+- If the official documentation cannot be reached, say so and avoid asserting unverified or remembered syntax as current. Continue only with changes whose syntax is already established in the repository or clearly mark validation as incomplete.
+- Keep this repository focused on reusable, policy-free rulesets and the sanitized `Surge/conf/Ticket.conf` example. Do not add scripts, live-profile automation, or proxy/policy behavior as part of routine rules maintenance.
+- Never create or alter symlinks to Surge's live profile directory, reload/import a production profile, or automatically deploy/roll back changes. Use static checks and, when available, validate an isolated test configuration. Ask for explicit authorization before any live-profile operation.
+- Do not modify real proxy endpoints, IP addresses, passwords, tokens, subscription URLs, DNS, gateway, or MITM settings. If a separate task explicitly requires editing a local profile, keep the change narrowly scoped, preserve unrelated settings, and do not expose secret values in output or version control.
+- A request to force `DIRECT`, bind a proxy policy, or define a strategy group is outside the pure-ruleset contract. Do not encode it in `Surge/rules/`; clarify the scope or handle it separately in a sanitized example only when explicitly requested.
+- Keep scripts within `scripts/` limited to repository maintenance and validation unless the project scope is explicitly expanded. Any Surge scripting feature must be based on the official documentation and must not be silently mounted into a profile.
 
 ## Required validation for every ruleset change
 

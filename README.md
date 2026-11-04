@@ -182,6 +182,7 @@ python3 scripts/validate_rulesets.py
 The check is also run by GitHub Actions for changes to rulesets or the validator. It rejects malformed metadata, unsupported rule types, invalid domains, policy-bearing lines, and duplicate domains. Parent/child suffix overlaps are reported for manual review because some may be intentional. The validator is not a substitute for checking official service evidence or testing a ruleset in Surge.
 
 Repository-specific instructions for AI agents and contributors are maintained in [`AGENTS.md`](./AGENTS.md).
+For Surge syntax, agents should consult the official [LLM documentation index](https://nssurge.com/llms.txt) and the specific current documentation it references. Live profile syncing, symlink creation, and automatic reload/deployment are intentionally outside this repository's maintenance workflow.
 
 Example / 示例:
 

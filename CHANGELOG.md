@@ -9,6 +9,7 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 - Added a dependency-free ruleset validator and GitHub Actions check for syntax, metadata, and duplicate domains.
 ### Changed
 - Documented the full ruleset inventory, repository layout, and AI-agent maintenance guidance.
+- Added official Surge documentation references and safeguards against live-profile edits or policy-bearing rules.
 - Ignored macOS Finder metadata files.
 - Sanitized `Ticket.conf` into a reusable template with local-only node and subscription placeholders.
 - Added encrypted DNS defaults, a flexible policy group, and references for the finance-flexible and Apple Intelligence rulesets.
