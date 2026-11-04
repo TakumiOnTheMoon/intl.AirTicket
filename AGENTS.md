@@ -34,6 +34,7 @@ Before adding, removing, or changing a domain:
 - Keep personal Surge profiles and credentials outside the repository. Do not inspect external profiles unless the user explicitly authorizes it; when authorized, use them only for the requested check and never print, copy, commit, or otherwise expose their contents. Never make an external profile a default edit target.
 - Do not add local machine files, credentials, subscription URLs, or user-specific routing policy to the repository.
 - Preserve the existing `Surge/rules/` paths unless a migration includes updates to all references and is explicitly justified; consumers may depend on these paths.
+- Follow [`Surge/conf/README.md`](Surge/conf/README.md) when editing tracked configuration examples. Keep changes minimal and update every ruleset reference when a file is removed or renamed.
 
 ## Surge documentation and live-profile safety
 

@@ -87,6 +87,7 @@ For financial and risk-sensitive platforms, this project **strongly recommends**
 │   └── export_rulesets.py               # Generated client formats
 ├── Surge/
 │   ├── conf/Ticket.conf                  # Reusable example profile
+│   ├── conf/README.md                    # Configuration writing standard
 │   ├── rules/                            # Policy-free canonical rulesets
 │   └── sources/README.md                 # Evidence requirements for new finance domains
 ├── exports/
@@ -104,7 +105,6 @@ The rules are grouped by region and category. Existing filenames are stable beca
 | --- | --- |
 | `AppleIntelligence.list` | Apple Intelligence, Siri, APNs push, and relay domains |
 | `AppleLocations.list` | Apple location and mapping services |
-| `BT_P2P.list` | BitTorrent and peer-to-peer services |
 | `DevTools.list` | Developer tools and package registries |
 | `Fin_Flex.list` | Multi-region financial services |
 | `Fin_Tel_CA.list` | Canada finance and telecom |
@@ -112,7 +112,6 @@ The rules are grouped by region and category. Existing filenames are stable beca
 | `Fin_Tel_HK.list` | Hong Kong finance and telecom |
 | `Fin_Tel_UK.list` | United Kingdom finance and telecom |
 | `Fin_Tel_US.list` | United States finance and telecom |
-| `customise.list` | Personal custom-domain example |
 
 Each ruleset is **self-contained** and intended to be referenced from a Surge profile. It matches traffic only; routing policy remains in the consumer's configuration.
 
@@ -217,7 +216,7 @@ Both checks are also run by GitHub Actions for changes to rulesets, tests, or th
 
 The current `.list` files remain the canonical, policy-free domain data. Other clients can be supported with generated adapters (for example, provider/YAML exports), but each client format must be verified independently; do not maintain copied lists by hand or embed routing policies in the canonical files.
 
-Repository-specific instructions for AI agents and contributors are maintained in [`AGENTS.md`](./AGENTS.md).
+Repository-specific instructions for AI agents and contributors are maintained in [`AGENTS.md`](./AGENTS.md). Tracked Surge configuration conventions are documented in [`Surge/conf/README.md`](./Surge/conf/README.md).
 For Surge syntax, agents should consult the official [LLM documentation index](https://nssurge.com/llms.txt) and the specific current documentation it references. Live profile syncing, symlink creation, and automatic reload/deployment are intentionally outside this repository's maintenance workflow.
 
 Example / 示例:

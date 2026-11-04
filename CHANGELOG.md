@@ -9,6 +9,7 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 - Added a dependency-free ruleset validator and GitHub Actions check for syntax, metadata, duplicates, tests, and generated client exports.
 - Added unit tests for validation/export behavior and generated Shadowrocket and Mihomo/Clash Meta rule-provider formats.
 ### Changed
+- Added a Surge configuration writing standard and removed the BT/P2P and personal-custom rulesets with their references and generated exports.
 - Merged domain-only Apple, US, and Germany updates from GitHub; excluded an unsubstantiated broad third-party analytics domain.
 - Re-scoped `AppleIntelligence.list` to Siri, Apple Intelligence, APNs, and relay domains; the upstream revision no longer includes Apple News and Podcasts.
 - Documented canonical rules as the source for generated multi-client exports.
