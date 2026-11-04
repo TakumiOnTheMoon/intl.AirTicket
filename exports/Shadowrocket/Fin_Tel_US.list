@@ -1,0 +1,150 @@
+# GENERATED FROM: Surge/rules/Fin_Tel_US.list; edit the canonical source instead.
+#########################################
+# NAME: US Financial & Telecommunication
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: 美国主要银行、券商、电信运营商、征信机构域名代理规则清单
+#########################################
+
+##################################
+# 美国主要银行&税务
+##################################
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,jpmorganchase.com
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wf.com
+DOMAIN-SUFFIX,wellsfargomedia.com
+DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,usbank.com
+DOMAIN-SUFFIX,tdbank.com
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitalone360.com
+DOMAIN-SUFFIX,pnc.com
+DOMAIN-SUFFIX,truist.com
+DOMAIN-SUFFIX,suntrust.com
+DOMAIN-SUFFIX,bbt.com
+DOMAIN-SUFFIX,ally.com
+DOMAIN-SUFFIX,discover.com
+DOMAIN-SUFFIX,gs.com
+DOMAIN-SUFFIX,marcus.com
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,53.com
+DOMAIN-SUFFIX,regions.com
+DOMAIN-SUFFIX,sofi.com
+DOMAIN-SUFFIX,irs.gov
+DOMAIN-SUFFIX,id.me
+DOMAIN-SUFFIX,nuapp.us
+DOMAIN-SUFFIX,nu.international
+DOMAIN-SUFFIX,nu.com
+DOMAIN-SUFFIX,nubank.com.br
+
+##################################
+# 美国主要券商（Brokerages）
+##################################
+# 传统券商
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,fidelityinternational.com
+DOMAIN-SUFFIX,vanguard.com
+DOMAIN-SUFFIX,etrade.com
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,merrilledge.com
+DOMAIN-SUFFIX,ml.com
+DOMAIN-SUFFIX,youinvest.com
+
+# App-first / 新型券商
+DOMAIN-SUFFIX,robinhood.com
+DOMAIN-SUFFIX,rbnhd.com
+DOMAIN-SUFFIX,webull.com
+DOMAIN-SUFFIX,webullapp.com
+DOMAIN-SUFFIX,public.com
+DOMAIN-SUFFIX,m1finance.com
+DOMAIN-SUFFIX,allyinvest.com
+DOMAIN-SUFFIX,firstrade.com
+DOMAIN-SUFFIX,tradestation.com
+DOMAIN-SUFFIX,tastytrade.com
+
+# Robo-Advisors
+DOMAIN-SUFFIX,betterment.com
+DOMAIN-SUFFIX,wealthfront.com
+
+##################################
+# 征信与金融服务
+##################################
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,transunion.com
+DOMAIN-SUFFIX,nav.com
+DOMAIN-SUFFIX,myfico.com
+DOMAIN-SUFFIX,fico.com
+DOMAIN-SUFFIX,zellepay.com
+DOMAIN-SUFFIX,finicity.com
+DOMAIN-SUFFIX,creditkarma.com
+
+##################################
+# 电信运营商
+##################################
+# Verizon
+DOMAIN-SUFFIX,verizon.com
+DOMAIN-SUFFIX,verizonwireless.com
+DOMAIN-SUFFIX,vz.com
+DOMAIN-SUFFIX,vzw.com
+
+# AT&T
+DOMAIN-SUFFIX,att.com
+DOMAIN-SUFFIX,att.net
+DOMAIN-SUFFIX,sbcglobal.net
+DOMAIN-SUFFIX,bellsouth.net
+
+# T-Mobile / Sprint
+DOMAIN-SUFFIX,t-mobile.com
+DOMAIN-SUFFIX,sprint.com
+DOMAIN-SUFFIX,metropcs.com
+
+# Comcast / Xfinity
+DOMAIN-SUFFIX,comcast.com
+DOMAIN-SUFFIX,xfinity.com
+
+# Charter Spectrum
+DOMAIN-SUFFIX,spectrum.com
+DOMAIN-SUFFIX,charter.com
+
+# Cox Communications
+DOMAIN-SUFFIX,cox.com
+DOMAIN-SUFFIX,cox.net
+
+# CenturyLink / Lumen
+DOMAIN-SUFFIX,centurylink.com
+DOMAIN-SUFFIX,lumen.com
+DOMAIN-SUFFIX,qwest.net
+
+# Frontier
+DOMAIN-SUFFIX,frontier.com
+
+# MVNO / 虚拟运营商
+DOMAIN-SUFFIX,ultramobile.com
+DOMAIN-SUFFIX,tello.com
+DOMAIN-SUFFIX,mintmobile.com
+DOMAIN-SUFFIX,usmobile.com
+DOMAIN-SUFFIX,visible.com
+DOMAIN-SUFFIX,fi.google.com
+DOMAIN-SUFFIX,ting.com
+DOMAIN-SUFFIX,boostmobile.com
+
+##################################
+# WI-FI Calling
+##################################
+# Ultra Mobile / T-Mobile Wi-Fi Calling ePDG 域名
+# DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+# DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+# DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+
+# T-Mobile IMS 通信辅助域名
+# DOMAIN-SUFFIX,msg.fi.google.com
+# DOMAIN-SUFFIX,t-mobile.com
+
+
+################## EOF ##################

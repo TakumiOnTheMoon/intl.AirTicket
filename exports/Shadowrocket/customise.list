@@ -1,0 +1,11 @@
+# GENERATED FROM: Surge/rules/customise.list; edit the canonical source instead.
+#########################################
+# NAME: My Domain
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: Self Domain Rules
+#########################################
+
+DOMAIN-SUFFIX,takumionthemoon.top
+
+################## EOF ##################

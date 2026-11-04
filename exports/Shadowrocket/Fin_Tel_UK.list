@@ -1,0 +1,79 @@
+# GENERATED FROM: Surge/rules/Fin_Tel_UK.list; edit the canonical source instead.
+#########################################
+# NAME: UK Financial & Telecommunication
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: 英国本地银行、券商、电信及虚拟运营商规则
+#########################################
+
+############################
+# 英国主要银行 / 数字银行
+############################
+DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,bankofscotland.co.uk
+DOMAIN-SUFFIX,halifax.co.uk
+DOMAIN-SUFFIX,barclays.co.uk
+DOMAIN-SUFFIX,natwest.com
+DOMAIN-SUFFIX,rbs.co.uk
+DOMAIN-SUFFIX,santander.co.uk
+DOMAIN-SUFFIX,tsb.co.uk
+DOMAIN-SUFFIX,metrobankonline.co.uk
+
+# 数字银行 / Challenger Banks
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,starlingbank.com
+DOMAIN-SUFFIX,atom.bank
+DOMAIN-SUFFIX,virginmoney.com
+DOMAIN-SUFFIX,firstdirect.com
+
+############################
+# 英国本地券商（仅 UK）
+############################
+DOMAIN-SUFFIX,hargreaveslansdown.co.uk
+DOMAIN-SUFFIX,ajbell.co.uk
+DOMAIN-SUFFIX,interactiveinvestor.co.uk
+DOMAIN-SUFFIX,freetrade.io
+DOMAIN-SUFFIX,trading212.com
+DOMAIN-SUFFIX,ig.com
+DOMAIN-SUFFIX,cmcmarkets.com
+
+############################
+# 英国电信运营商（MNO）
+############################
+# BT / EE
+DOMAIN-SUFFIX,bt.com
+DOMAIN-SUFFIX,ee.co.uk
+DOMAIN-SUFFIX,plus.net
+
+# Vodafone
+DOMAIN-SUFFIX,vodafone.co.uk
+DOMAIN-SUFFIX,voxivo.com
+
+# O2
+DOMAIN-SUFFIX,o2.co.uk
+DOMAIN-SUFFIX,giffgaff.com
+
+# Three
+DOMAIN-SUFFIX,three.co.uk
+DOMAIN-SUFFIX,idmobile.co.uk
+
+############################
+# 英国虚拟运营商 / 子品牌（MVNO）
+############################
+DOMAIN-SUFFIX,tescomobile.com
+DOMAIN-SUFFIX,lebara.co.uk
+DOMAIN-SUFFIX,lycamobile.co.uk
+DOMAIN-SUFFIX,smarty.co.uk
+DOMAIN-SUFFIX,voxi.co.uk
+DOMAIN-SUFFIX,asdamobile.co.uk
+DOMAIN-SUFFIX,sky.com
+
+############################
+# 英国本地支付 / 金融网络
+############################
+DOMAIN-SUFFIX,fasterpayments.org.uk
+DOMAIN-SUFFIX,bacs.co.uk
+DOMAIN-SUFFIX,link.co.uk
+
+################## EOF ##################

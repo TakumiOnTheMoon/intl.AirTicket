@@ -1,0 +1,69 @@
+# GENERATED FROM: Surge/rules/Fin_Tel_CA.list; edit the canonical source instead.
+#########################################
+# NAME: CA Financial & Telecommunication
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: 加拿大本地银行、券商、电信及虚拟运营商规则
+#########################################
+
+##################################
+# 加拿大主要银行（Big Five + Local）
+##################################
+DOMAIN-SUFFIX,rbc.com
+DOMAIN-SUFFIX,royalbank.com
+DOMAIN-SUFFIX,td.com
+DOMAIN-SUFFIX,tdbank.ca
+DOMAIN-SUFFIX,cibc.com
+DOMAIN-SUFFIX,nationalbank.ca
+DOMAIN-SUFFIX,nbc.ca
+DOMAIN-SUFFIX,laurentianbank.ca
+DOMAIN-SUFFIX,desjardins.com
+DOMAIN-SUFFIX,eqbank.ca
+
+##################################
+# 加拿大本地券商（仅 CA）
+##################################
+DOMAIN-SUFFIX,questrade.com
+DOMAIN-SUFFIX,wealthsimple.com
+DOMAIN-SUFFIX,investorsgroup.com
+DOMAIN-SUFFIX,nbdb.ca
+DOMAIN-SUFFIX,disnat.com
+
+##################################
+# 加拿大电信运营商（MNO）
+##################################
+# Rogers
+DOMAIN-SUFFIX,rogers.com
+DOMAIN-SUFFIX,rogerswireless.com
+DOMAIN-SUFFIX,fido.ca
+
+# Bell
+DOMAIN-SUFFIX,bell.ca
+DOMAIN-SUFFIX,bellmedia.ca
+DOMAIN-SUFFIX,virginplus.ca
+
+# Telus
+DOMAIN-SUFFIX,telus.com
+DOMAIN-SUFFIX,koodomobile.com
+DOMAIN-SUFFIX,publicmobile.ca
+
+# Shaw
+DOMAIN-SUFFIX,shaw.ca
+DOMAIN-SUFFIX,freedommobile.ca
+
+##################################
+# 加拿大虚拟运营商 / 子品牌（MVNO）
+##################################
+DOMAIN-SUFFIX,chatrwireless.com
+DOMAIN-SUFFIX,zoomermobile.ca
+DOMAIN-SUFFIX,luckymobile.ca
+DOMAIN-SUFFIX,speakout7eleven.ca
+DOMAIN-SUFFIX,cityfone.net
+DOMAIN-SUFFIX,petro-canada.ca
+
+##################################
+# 加拿大本地支付网络
+##################################
+DOMAIN-SUFFIX,interac.ca
+
+################## EOF ##################

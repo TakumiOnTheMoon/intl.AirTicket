@@ -1,0 +1,38 @@
+# NAME: Financial Flexible Services
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# GENERATED FROM: Surge/rules/Fin_Flex.list; edit the canonical source instead.
+payload:
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - DOMAIN-SUFFIX,venmo.com
+  - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,stripe.network
+  - DOMAIN-SUFFIX,stripepayments.com
+  - DOMAIN-SUFFIX,squareup.com
+  - DOMAIN-SUFFIX,cash.app
+  - DOMAIN-SUFFIX,cash.me
+  - DOMAIN-SUFFIX,revolut.com
+  - DOMAIN-SUFFIX,revolut.me
+  - DOMAIN-SUFFIX,revolutbusiness.com
+  - DOMAIN-SUFFIX,revolut.us
+  - DOMAIN-SUFFIX,revolutapp.com
+  - DOMAIN-SUFFIX,revolutapi.com
+  - DOMAIN-SUFFIX,wise.com
+  - DOMAIN-SUFFIX,transferwise.com
+  - DOMAIN-SUFFIX,wiseapp.com
+  - DOMAIN-SUFFIX,wiseplatform.com
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,americanexpress.co.uk
+  - DOMAIN-SUFFIX,amex.com
+  - DOMAIN-SUFFIX,aexp-static.com
+  - DOMAIN-SUFFIX,bmo.com
+  - DOMAIN-SUFFIX,scotiabank.com
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,coinbaseusercontent.com
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.us
+  - DOMAIN-SUFFIX,gemini.com
+  - DOMAIN-SUFFIX,bitstamp.net
+################## EOF ##################

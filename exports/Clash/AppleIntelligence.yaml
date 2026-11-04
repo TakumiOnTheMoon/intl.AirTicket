@@ -1,0 +1,26 @@
+# NAME: Apple Intelligence
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# GENERATED FROM: Surge/rules/AppleIntelligence.list; edit the canonical source instead.
+payload:
+  - DOMAIN-SUFFIX,push.apple.com
+  - DOMAIN-SUFFIX,smoot.apple.com
+  - DOMAIN-SUFFIX,guzzoni.apple.com
+  - DOMAIN,api-siri-prod.apple.com
+  - DOMAIN,seed.siri.apple.com
+  - DOMAIN,gspe1-ssl.ls.apple.com
+  - DOMAIN,gateway.icloud.com
+  - DOMAIN,probe.icloud.com
+  - DOMAIN,metrics.icloud.com
+  - DOMAIN,mask.icloud.com
+  - DOMAIN,mask-api.icloud.com
+  - DOMAIN,gs-loc-cn.apple.com
+  - DOMAIN-SUFFIX,apple-relay.apple.com
+  - DOMAIN,apple-relay.cloudflare.com
+  - DOMAIN,apple-relay.fastly-edge.com
+  - DOMAIN,apple-relay.akamaized.net
+  - DOMAIN,apple-carry-relay.cloudflare.com
+  - DOMAIN,cp4.cloudflare.com
+  - DOMAIN,apple-relay.mask.apple-dns.net
+  - DOMAIN,mask-api.fe2.apple-dns.net
+################## EOF ##################

@@ -56,7 +56,11 @@ Run and record the relevant checks before committing:
 5. **Surge import smoke test** — when Surge is available, import or reload the affected ruleset in a test configuration and verify it parses without errors. If Surge is unavailable, state that the smoke test was not run and perform the static checks above.
 6. **Behavior check when feasible** — test representative official web/app endpoints through the intended policy and verify that expected traffic matches the rule. Do not log in, transact, or bypass security controls unless explicitly authorized.
 
-Run the repository's static validator with `python3 scripts/validate_rulesets.py`. It checks UTF-8, metadata order and dates, the standard EOF marker, domain-rule syntax, policy-free format, exact duplicates, and reports parent/child suffix overlaps for manual review. Keep its supported rule types synchronized with any intentional format expansion.
+Run `python3 -m unittest discover -s tests -v`, `python3 scripts/validate_rulesets.py`, and `python3 scripts/export_rulesets.py --check`. The validator checks UTF-8, metadata order and dates, the standard EOF marker, domain-rule syntax, policy-free format, same-type duplicates, and reports exact/suffix overlaps for manual review. Keep its supported rule types synchronized with any intentional format expansion.
+
+For multi-client support, treat these domain-only rules as canonical source data. Do not hand-maintain parallel copies; generate client-specific formats from the canonical rules only after checking each target client's current import/provider syntax. Keep routing policies outside the source domain lists, and do not claim app-level compatibility until representative exports have been tested with the target client or its parser.
+
+For each newly researched financial service or domain, record its country, category, source URL, evidence type, verification date, match scope, and ownership/false-positive assessment in `Surge/sources/`. This evidence ledger is additive; existing lists are not assumed to be fully audited. Treat public rule repositories and search results as leads, not proof.
 
 ## Documentation and change log
 

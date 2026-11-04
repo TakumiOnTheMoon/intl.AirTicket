@@ -1,0 +1,30 @@
+# GENERATED FROM: Surge/rules/AppleLocations.list; edit the canonical source instead.
+#########################################
+# NAME: Apple Driver & Location
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: Apple 定位、配置、地图、驱动相关服务域名
+#########################################
+
+##################################
+# 📍 定位 / 查找服务
+##################################
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN-SUFFIX,findmyiphone.com
+DOMAIN-SUFFIX,findmy.com
+
+##################################
+# 🌍 地图 / 地理位置
+##################################
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,mapkit.apple.com
+DOMAIN-SUFFIX,maps.apple.com
+
+##################################
+# 🔒 配置 / 校验
+##################################
+DOMAIN-SUFFIX,mdmenrollment.apple.com
+DOMAIN-SUFFIX,mdmcert.download
+DOMAIN-SUFFIX,configuration.apple.com
+
+################## EOF ##################

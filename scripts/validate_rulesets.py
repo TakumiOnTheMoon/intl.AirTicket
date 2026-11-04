@@ -131,19 +131,36 @@ def validate() -> tuple[list[str], list[str], int, int]:
             key = domain.lower()
             rules_by_domain[key].append((relative_path.as_posix(), line_number, rule_type))
 
-    duplicate_count = 0
     for domain, entries in sorted(rules_by_domain.items()):
-        if len(entries) > 1:
-            duplicate_count += 1
+        rule_types = {entry[2] for entry in entries}
+        if len(entries) > 1 and len(rule_types) == 1:
             locations = ", ".join(f"{path}:{line}" for path, line, _ in entries)
             errors.append(f"duplicate domain {domain!r}: {locations}")
 
     suffixes = sorted(rules_by_domain)
     for domain in suffixes:
         for parent in suffixes:
-            if domain != parent and domain.endswith(f".{parent}"):
-                child_entry = rules_by_domain[domain][0]
-                parent_entry = rules_by_domain[parent][0]
+            if domain == parent:
+                child_entries = [
+                    entry for entry in rules_by_domain[domain] if entry[2] == "DOMAIN"
+                ]
+                parent_entries = [
+                    entry
+                    for entry in rules_by_domain[parent]
+                    if entry[2] == "DOMAIN-SUFFIX"
+                ]
+            elif domain.endswith(f".{parent}"):
+                child_entries = rules_by_domain[domain]
+                parent_entries = [
+                    entry
+                    for entry in rules_by_domain[parent]
+                    if entry[2] == "DOMAIN-SUFFIX"
+                ]
+            else:
+                continue
+            if child_entries and parent_entries:
+                child_entry = child_entries[0]
+                parent_entry = parent_entries[0]
                 overlaps.append(
                     f"{child_entry[0]}:{child_entry[1]} ({domain}) is covered by "
                     f"{parent_entry[0]}:{parent_entry[1]} ({parent})"

@@ -1,0 +1,39 @@
+# NAME: CA Financial & Telecommunication
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# GENERATED FROM: Surge/rules/Fin_Tel_CA.list; edit the canonical source instead.
+payload:
+  - DOMAIN-SUFFIX,rbc.com
+  - DOMAIN-SUFFIX,royalbank.com
+  - DOMAIN-SUFFIX,td.com
+  - DOMAIN-SUFFIX,tdbank.ca
+  - DOMAIN-SUFFIX,cibc.com
+  - DOMAIN-SUFFIX,nationalbank.ca
+  - DOMAIN-SUFFIX,nbc.ca
+  - DOMAIN-SUFFIX,laurentianbank.ca
+  - DOMAIN-SUFFIX,desjardins.com
+  - DOMAIN-SUFFIX,eqbank.ca
+  - DOMAIN-SUFFIX,questrade.com
+  - DOMAIN-SUFFIX,wealthsimple.com
+  - DOMAIN-SUFFIX,investorsgroup.com
+  - DOMAIN-SUFFIX,nbdb.ca
+  - DOMAIN-SUFFIX,disnat.com
+  - DOMAIN-SUFFIX,rogers.com
+  - DOMAIN-SUFFIX,rogerswireless.com
+  - DOMAIN-SUFFIX,fido.ca
+  - DOMAIN-SUFFIX,bell.ca
+  - DOMAIN-SUFFIX,bellmedia.ca
+  - DOMAIN-SUFFIX,virginplus.ca
+  - DOMAIN-SUFFIX,telus.com
+  - DOMAIN-SUFFIX,koodomobile.com
+  - DOMAIN-SUFFIX,publicmobile.ca
+  - DOMAIN-SUFFIX,shaw.ca
+  - DOMAIN-SUFFIX,freedommobile.ca
+  - DOMAIN-SUFFIX,chatrwireless.com
+  - DOMAIN-SUFFIX,zoomermobile.ca
+  - DOMAIN-SUFFIX,luckymobile.ca
+  - DOMAIN-SUFFIX,speakout7eleven.ca
+  - DOMAIN-SUFFIX,cityfone.net
+  - DOMAIN-SUFFIX,petro-canada.ca
+  - DOMAIN-SUFFIX,interac.ca
+################## EOF ##################

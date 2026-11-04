@@ -1,0 +1,47 @@
+# NAME: UK Financial & Telecommunication
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# GENERATED FROM: Surge/rules/Fin_Tel_UK.list; edit the canonical source instead.
+payload:
+  - DOMAIN-SUFFIX,hsbc.co.uk
+  - DOMAIN-SUFFIX,lloydsbank.com
+  - DOMAIN-SUFFIX,bankofscotland.co.uk
+  - DOMAIN-SUFFIX,halifax.co.uk
+  - DOMAIN-SUFFIX,barclays.co.uk
+  - DOMAIN-SUFFIX,natwest.com
+  - DOMAIN-SUFFIX,rbs.co.uk
+  - DOMAIN-SUFFIX,santander.co.uk
+  - DOMAIN-SUFFIX,tsb.co.uk
+  - DOMAIN-SUFFIX,metrobankonline.co.uk
+  - DOMAIN-SUFFIX,monzo.com
+  - DOMAIN-SUFFIX,starlingbank.com
+  - DOMAIN-SUFFIX,atom.bank
+  - DOMAIN-SUFFIX,virginmoney.com
+  - DOMAIN-SUFFIX,firstdirect.com
+  - DOMAIN-SUFFIX,hargreaveslansdown.co.uk
+  - DOMAIN-SUFFIX,ajbell.co.uk
+  - DOMAIN-SUFFIX,interactiveinvestor.co.uk
+  - DOMAIN-SUFFIX,freetrade.io
+  - DOMAIN-SUFFIX,trading212.com
+  - DOMAIN-SUFFIX,ig.com
+  - DOMAIN-SUFFIX,cmcmarkets.com
+  - DOMAIN-SUFFIX,bt.com
+  - DOMAIN-SUFFIX,ee.co.uk
+  - DOMAIN-SUFFIX,plus.net
+  - DOMAIN-SUFFIX,vodafone.co.uk
+  - DOMAIN-SUFFIX,voxivo.com
+  - DOMAIN-SUFFIX,o2.co.uk
+  - DOMAIN-SUFFIX,giffgaff.com
+  - DOMAIN-SUFFIX,three.co.uk
+  - DOMAIN-SUFFIX,idmobile.co.uk
+  - DOMAIN-SUFFIX,tescomobile.com
+  - DOMAIN-SUFFIX,lebara.co.uk
+  - DOMAIN-SUFFIX,lycamobile.co.uk
+  - DOMAIN-SUFFIX,smarty.co.uk
+  - DOMAIN-SUFFIX,voxi.co.uk
+  - DOMAIN-SUFFIX,asdamobile.co.uk
+  - DOMAIN-SUFFIX,sky.com
+  - DOMAIN-SUFFIX,fasterpayments.org.uk
+  - DOMAIN-SUFFIX,bacs.co.uk
+  - DOMAIN-SUFFIX,link.co.uk
+################## EOF ##################

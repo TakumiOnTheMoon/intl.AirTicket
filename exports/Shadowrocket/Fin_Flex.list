@@ -1,0 +1,71 @@
+# GENERATED FROM: Surge/rules/Fin_Flex.list; edit the canonical source instead.
+#########################################
+# NAME: Financial Flexible Services
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: 跨国家/地区账户的金融服务；应由手动策略组选择与当前账户一致的出口
+#########################################
+
+##################################
+# 支付平台 / 金融科技
+##################################
+# PayPal / Venmo
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,venmo.com
+
+# Stripe
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,stripepayments.com
+
+# Square / Cash App
+DOMAIN-SUFFIX,squareup.com
+DOMAIN-SUFFIX,cash.app
+DOMAIN-SUFFIX,cash.me
+
+# Revolut
+DOMAIN-SUFFIX,revolut.com
+DOMAIN-SUFFIX,revolut.me
+DOMAIN-SUFFIX,revolutbusiness.com
+DOMAIN-SUFFIX,revolut.us
+DOMAIN-SUFFIX,revolutapp.com
+DOMAIN-SUFFIX,revolutapi.com
+
+# Wise (TransferWise)
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wiseapp.com
+DOMAIN-SUFFIX,wiseplatform.com
+
+# American Express（全球站点及地区路径；手动选择当前账户所属地区出口）
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,americanexpress.co.uk
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,aexp-static.com
+
+# BMO / Scotiabank（跨加拿大、美国及其他市场）
+DOMAIN-SUFFIX,bmo.com
+DOMAIN-SUFFIX,scotiabank.com
+
+##################################
+# 数字货币交易所（Crypto / Web / App）
+##################################
+# Kraken
+DOMAIN-SUFFIX,kraken.com
+
+# Coinbase
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbaseusercontent.com
+
+# Binance
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.us
+
+# Gemini
+DOMAIN-SUFFIX,gemini.com
+
+# Bitstamp
+DOMAIN-SUFFIX,bitstamp.net
+
+################## EOF ##################

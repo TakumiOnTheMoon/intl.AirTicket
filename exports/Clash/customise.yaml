@@ -1,0 +1,7 @@
+# NAME: My Domain
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# GENERATED FROM: Surge/rules/customise.list; edit the canonical source instead.
+payload:
+  - DOMAIN-SUFFIX,takumionthemoon.top
+################## EOF ##################

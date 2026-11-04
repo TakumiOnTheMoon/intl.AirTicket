@@ -82,10 +82,17 @@ For financial and risk-sensitive platforms, this project **strongly recommends**
 ```text
 .
 ├── .github/workflows/validate-rules.yml  # Ruleset CI
-├── scripts/validate_rulesets.py         # Local static validator
+├── scripts/
+│   ├── validate_rulesets.py             # Canonical rules validation
+│   └── export_rulesets.py               # Generated client formats
 ├── Surge/
 │   ├── conf/Ticket.conf                  # Reusable example profile
-│   └── rules/                            # Policy-free rulesets
+│   ├── rules/                            # Policy-free canonical rulesets
+│   └── sources/README.md                 # Evidence requirements for new finance domains
+├── exports/
+│   ├── Shadowrocket/                     # Generated policy-free .list files
+│   └── Clash/                            # Generated Mihomo/Clash Meta YAML providers
+├── tests/                                # Validator and exporter regression tests
 ├── AGENTS.md                             # Repository-specific AI agent guidance
 ├── CHANGELOG.md
 └── README.md
@@ -95,7 +102,7 @@ The rules are grouped by region and category. Existing filenames are stable beca
 
 | Ruleset | Scope |
 | --- | --- |
-| `AppleIntelligence.list` | Apple Intelligence and related Apple service domains |
+| `AppleIntelligence.list` | Apple Intelligence, Siri, APNs push, and relay domains |
 | `AppleLocations.list` | Apple location and mapping services |
 | `BT_P2P.list` | BitTorrent and peer-to-peer services |
 | `DevTools.list` | Developer tools and package registries |
@@ -108,6 +115,31 @@ The rules are grouped by region and category. Existing filenames are stable beca
 | `customise.list` | Personal custom-domain example |
 
 Each ruleset is **self-contained** and intended to be referenced from a Surge profile. It matches traffic only; routing policy remains in the consumer's configuration.
+
+---
+
+## 📱 Other clients / 其他客户端
+
+`Surge/rules/` remains the canonical, policy-free domain source. Following the per-client publishing pattern used by [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule), run `python3 scripts/export_rulesets.py` to generate Shadowrocket `.list` files and Mihomo/Clash Meta YAML rule providers under `exports/`; CI checks that generated output stays synchronized.
+
+The generated files contain matching rules only. Assign the desired policy in each client's own profile. For Clash Meta/Mihomo, configure a `classical` rule provider with `format: yaml`, then reference it using that profile's policy:
+
+```yaml
+rule-providers:
+  intl-us-finance:
+    type: http
+    behavior: classical
+    format: yaml
+    path: ./rules/intl-us-finance.yaml
+    url: https://raw.githubusercontent.com/TakumiOnTheMoon/intl.AirTicket/main/exports/Clash/Fin_Tel_US.yaml
+    interval: 86400
+rules:
+  - RULE-SET,intl-us-finance,US-FIN
+```
+
+In Shadowrocket, import the generated list as a `RULE-SET` and assign its policy in the Shadowrocket profile. App-level import testing has not been run in this repository; treat the exports as format targets until verified in the specific client/version you use. Legacy Clash variants may require a different provider format.
+
+For finance-domain expansion, add the source and ownership assessment to [`Surge/sources/README.md`](./Surge/sources/README.md). Existing rule entries have not all been backfilled into an evidence ledger.
 
 ---
 
@@ -176,10 +208,14 @@ These practices significantly reduce:
 Before submitting a ruleset change, run the dependency-free static check:
 
 ```sh
+python3 -m unittest discover -s tests -v
 python3 scripts/validate_rulesets.py
+python3 scripts/export_rulesets.py --check
 ```
 
-The check is also run by GitHub Actions for changes to rulesets or the validator. It rejects malformed metadata, unsupported rule types, invalid domains, policy-bearing lines, and duplicate domains. Parent/child suffix overlaps are reported for manual review because some may be intentional. The validator is not a substitute for checking official service evidence or testing a ruleset in Surge.
+Both checks are also run by GitHub Actions for changes to rulesets, tests, or the validator. The validator rejects malformed metadata, unsupported rule types, invalid domains, policy-bearing lines, and duplicate domains. Parent/child suffix overlaps are reported for manual review because some may be intentional. It is not a substitute for checking official service evidence or testing a ruleset in Surge.
+
+The current `.list` files remain the canonical, policy-free domain data. Other clients can be supported with generated adapters (for example, provider/YAML exports), but each client format must be verified independently; do not maintain copied lists by hand or embed routing policies in the canonical files.
 
 Repository-specific instructions for AI agents and contributors are maintained in [`AGENTS.md`](./AGENTS.md).
 For Surge syntax, agents should consult the official [LLM documentation index](https://nssurge.com/llms.txt) and the specific current documentation it references. Live profile syncing, symlink creation, and automatic reload/deployment are intentionally outside this repository's maintenance workflow.

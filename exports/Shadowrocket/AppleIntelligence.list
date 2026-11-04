@@ -1,0 +1,37 @@
+# GENERATED FROM: Surge/rules/AppleIntelligence.list; edit the canonical source instead.
+#########################################
+# NAME: Apple Intelligence
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
+# DESCRIPTION: Apple Intelligence, Siri, APNs push and relay domains
+#########################################
+
+# APNs push
+DOMAIN-SUFFIX,push.apple.com
+
+# Siri and voice
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN,api-siri-prod.apple.com
+DOMAIN,seed.siri.apple.com
+DOMAIN,gspe1-ssl.ls.apple.com
+
+# Apple Intelligence, Private Cloud Compute and related services
+DOMAIN,gateway.icloud.com
+DOMAIN,probe.icloud.com
+DOMAIN,metrics.icloud.com
+DOMAIN,mask.icloud.com
+DOMAIN,mask-api.icloud.com
+DOMAIN,gs-loc-cn.apple.com
+
+# Private Relay and relay endpoints
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,apple-relay.akamaized.net
+DOMAIN,apple-carry-relay.cloudflare.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN,mask-api.fe2.apple-dns.net
+
+################## EOF ##################
