@@ -79,14 +79,35 @@ For financial and risk-sensitive platforms, this project **strongly recommends**
 
 ## 📁 Repository Structure / 仓库结构
 
-Surge/  
-├─ rules/  
-│  ├─ Fin_Tel_CA.list          # Base finance & telecom rules / 基础金融及电信规则  
-│  ├─ Fin_Flex.list            # Multi-region finance services (Amex, Wise, Revolut) / 跨国金融服务
-│  └─ ...                      # Other categorized rulesets / 其他分类规则  
+```text
+.
+├── .github/workflows/validate-rules.yml  # Ruleset CI
+├── scripts/validate_rulesets.py         # Local static validator
+├── Surge/
+│   ├── conf/Ticket.conf                  # Reusable example profile
+│   └── rules/                            # Policy-free rulesets
+├── AGENTS.md                             # Repository-specific AI agent guidance
+├── CHANGELOG.md
+└── README.md
+```
 
-> Each ruleset is **self-contained** and intended to be referenced from Surge main configuration.  
-> 每个规则文件独立，可在 Surge 主配置中直接引用。
+The rules are grouped by region and category. Existing filenames are stable because consumer profiles may reference them.
+
+| Ruleset | Scope |
+| --- | --- |
+| `AppleIntelligence.list` | Apple Intelligence and related Apple service domains |
+| `AppleLocations.list` | Apple location and mapping services |
+| `BT_P2P.list` | BitTorrent and peer-to-peer services |
+| `DevTools.list` | Developer tools and package registries |
+| `Fin_Flex.list` | Multi-region financial services |
+| `Fin_Tel_CA.list` | Canada finance and telecom |
+| `Fin_Tel_DE.list` | Germany finance and telecom |
+| `Fin_Tel_HK.list` | Hong Kong finance and telecom |
+| `Fin_Tel_UK.list` | United Kingdom finance and telecom |
+| `Fin_Tel_US.list` | United States finance and telecom |
+| `customise.list` | Personal custom-domain example |
+
+Each ruleset is **self-contained** and intended to be referenced from a Surge profile. It matches traffic only; routing policy remains in the consumer's configuration.
 
 ---
 
@@ -149,8 +170,18 @@ These practices significantly reduce:
 ## 🛠 Maintenance Guidelines / 维护规范
 
 - Rulesets should remain **pure** (no policy binding) / 保持规则文件纯粹（不绑定策略）  
-- Group rules by **service type**, not by region / 按服务类型分组，而非地区  
+- Group rules by region and service category / 按地区和服务类别组织规则
 - Commit messages follow **Conventional Commits** where possible / 提交信息尽量遵循规范格式  
+
+Before submitting a ruleset change, run the dependency-free static check:
+
+```sh
+python3 scripts/validate_rulesets.py
+```
+
+The check is also run by GitHub Actions for changes to rulesets or the validator. It rejects malformed metadata, unsupported rule types, invalid domains, policy-bearing lines, and duplicate domains. Parent/child suffix overlaps are reported for manual review because some may be intentional. The validator is not a substitute for checking official service evidence or testing a ruleset in Surge.
+
+Repository-specific instructions for AI agents and contributors are maintained in [`AGENTS.md`](./AGENTS.md).
 
 Example / 示例:
 

@@ -1,0 +1,27 @@
+name: Validate Surge rulesets
+
+on:
+  push:
+    paths:
+      - "Surge/rules/**"
+      - "scripts/validate_rulesets.py"
+      - ".github/workflows/validate-rules.yml"
+  pull_request:
+    paths:
+      - "Surge/rules/**"
+      - "scripts/validate_rulesets.py"
+      - ".github/workflows/validate-rules.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate rulesets
+        run: python3 scripts/validate_rulesets.py

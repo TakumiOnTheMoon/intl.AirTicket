@@ -27,6 +27,13 @@ Before adding, removing, or changing a domain:
 5. Consider false positives: confirm that a proposed suffix is actually controlled by the service and is not shared by unrelated businesses.
 6. For a removal, document why the domain is obsolete, duplicated, misclassified, or too broad.
 
+## Repository and data boundaries
+
+- Treat this file as the source of truth for repository-specific agent behavior. Read it before changing rules, configuration examples, or maintenance automation.
+- Keep personal Surge profiles and credentials outside the repository. Do not inspect external profiles unless the user explicitly authorizes it; when authorized, use them only for the requested check and never print, copy, commit, or otherwise expose their contents.
+- Do not add local machine files, credentials, subscription URLs, or user-specific routing policy to the repository.
+- Preserve the existing `Surge/rules/` paths unless a migration includes updates to all references and is explicitly justified; consumers may depend on these paths.
+
 ## Required validation for every ruleset change
 
 Run and record the relevant checks before committing:
@@ -37,6 +44,8 @@ Run and record the relevant checks before committing:
 4. **Configuration reference review** — when adding, renaming, moving, or deleting a ruleset, check `Surge/conf/Ticket.conf`, README examples, and any relevant documentation for references that must be updated.
 5. **Surge import smoke test** — when Surge is available, import or reload the affected ruleset in a test configuration and verify it parses without errors. If Surge is unavailable, state that the smoke test was not run and perform the static checks above.
 6. **Behavior check when feasible** — test representative official web/app endpoints through the intended policy and verify that expected traffic matches the rule. Do not log in, transact, or bypass security controls unless explicitly authorized.
+
+Run the repository's static validator with `python3 scripts/validate_rulesets.py`. It checks UTF-8, metadata, dates, domain-rule syntax, policy-free format, exact duplicates, and reports parent/child suffix overlaps for manual review. Keep its supported rule types synchronized with any intentional format expansion.
 
 ## Documentation and change log
 
