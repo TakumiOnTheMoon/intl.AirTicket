@@ -1,7 +1,7 @@
 #########################################
 # NAME: Dev Tools
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2025-11-21
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
 # DESCRIPTION: 开发环境常用国外服务（代码托管 / 包管理 / 构建工具 / 容器等）
 #########################################
 
@@ -9,11 +9,7 @@
 # Docker / 容器镜像相关
 # =========================
 DOMAIN-SUFFIX,docker.io
-DOMAIN,registry-1.docker.io
-DOMAIN,auth.docker.io
-DOMAIN,production.cloudflare.docker.com
 DOMAIN-SUFFIX,dockerstatic.com
-DOMAIN-SUFFIX,cloudflare.docker.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,ghcr.io
 DOMAIN-SUFFIX,quay.io
@@ -50,23 +46,17 @@ DOMAIN-SUFFIX,snyk.io
 # Java / Maven / Gradle / sbt
 # =========================
 # Maven Central & Sonatype
-DOMAIN-SUFFIX,maven.apache.org
-DOMAIN-SUFFIX,repo.maven.apache.org
 DOMAIN-SUFFIX,repo1.maven.org
 DOMAIN-SUFFIX,search.maven.org
 DOMAIN-SUFFIX,oss.sonatype.org
-DOMAIN-SUFFIX,s01.oss.sonatype.org
 
 # Spring / Gradle
 DOMAIN-SUFFIX,repo.spring.io
-DOMAIN-SUFFIX,repo.gradle.org
-DOMAIN-SUFFIX,services.gradle.org
 DOMAIN-SUFFIX,gradle.org
 
 # sbt / Scala
 DOMAIN-SUFFIX,scala-lang.org
 DOMAIN-SUFFIX,repo.scala-sbt.org
-DOMAIN-SUFFIX,repo.typesafe.com
 DOMAIN-SUFFIX,typesafe.com
 
 # =========================
@@ -93,16 +83,12 @@ DOMAIN-SUFFIX,files.pythonhosted.org
 # =========================
 DOMAIN-SUFFIX,golang.org
 DOMAIN-SUFFIX,go.dev
-DOMAIN-SUFFIX,proxy.golang.org
-DOMAIN-SUFFIX,sum.golang.org
 
 # =========================
 # Rust / Cargo
 # =========================
 DOMAIN-SUFFIX,rust-lang.org
-DOMAIN-SUFFIX,static.rust-lang.org
 DOMAIN-SUFFIX,crates.io
-DOMAIN-SUFFIX,static.crates.io
 
 # =========================
 # Ruby / Gem

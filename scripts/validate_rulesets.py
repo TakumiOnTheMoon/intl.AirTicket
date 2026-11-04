@@ -19,6 +19,7 @@ DOMAIN_PATTERN = re.compile(
     re.IGNORECASE,
 )
 METADATA_KEYS = ("NAME", "AUTHOR", "UPDATED")
+EOF_MARKER = "################## EOF ##################"
 
 
 def validate() -> tuple[list[str], list[str], int, int]:
@@ -64,13 +65,40 @@ def validate() -> tuple[list[str], list[str], int, int]:
                         f"{relative_path}:{line_number}: UPDATED must use YYYY-MM-DD"
                     )
 
-        footer_lines = [
+        metadata_positions = {
+            key: [
+                line_number
+                for line_number, line in enumerate(lines, start=1)
+                if line.startswith(f"# {key}:")
+            ]
+            for key in METADATA_KEYS
+        }
+        description_positions = [
             line_number
             for line_number, line in enumerate(lines, start=1)
-            if line == "EOF"
+            if line.startswith("# DESCRIPTION:")
         ]
-        if footer_lines and footer_lines != [len(lines)]:
-            errors.append(f"{relative_path}: EOF must appear only as the final line")
+        if all(len(metadata_positions[key]) == 1 for key in METADATA_KEYS):
+            ordered_header = [metadata_positions[key][0] for key in METADATA_KEYS]
+            description_is_out_of_order = bool(
+                description_positions
+                and description_positions[0] < ordered_header[-1]
+            )
+            if ordered_header != sorted(ordered_header) or description_is_out_of_order:
+                errors.append(
+                    f"{relative_path}: metadata order must be NAME, AUTHOR, UPDATED, "
+                    "then optional DESCRIPTION"
+                )
+
+        footer_lines = [
+            (line_number, line)
+            for line_number, line in enumerate(lines, start=1)
+            if "EOF" in line
+        ]
+        if footer_lines != [(len(lines), EOF_MARKER)]:
+            errors.append(
+                f"{relative_path}: expected one '{EOF_MARKER}' footer on the final line"
+            )
 
         for line_number, line in enumerate(lines, start=1):
             if not line or line.startswith("#") or line == "EOF":

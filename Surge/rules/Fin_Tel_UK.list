@@ -1,7 +1,7 @@
 #########################################
 # NAME: UK Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2025-12-15
+# UPDATED: 2026-11-04
 # DESCRIPTION: 英国本地银行、券商、电信及虚拟运营商规则
 #########################################
 
@@ -75,6 +75,4 @@ DOMAIN-SUFFIX,fasterpayments.org.uk
 DOMAIN-SUFFIX,bacs.co.uk
 DOMAIN-SUFFIX,link.co.uk
 
-##################
-# EOF
-##################
+################## EOF ##################

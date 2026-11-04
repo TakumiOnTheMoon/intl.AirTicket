@@ -14,7 +14,8 @@ The main task is to collect and maintain service domains that may require a stab
 - Do not add broad third-party infrastructure domains (for example, generic cloud, CDN, analytics, CAPTCHA, or identity providers) without showing that the specific service requires it and assessing its impact on unrelated traffic.
 - Keep rules grouped by country/region and service category, following the surrounding file's headings and comment style.
 - Keep files UTF-8, one Surge rule per non-comment line, and retain the `EOF` footer when the target file uses one.
-- Update the file header's `UPDATED` date whenever its rules change.
+- Keep ruleset metadata ordered as `NAME`, `AUTHOR`, `UPDATED`, then optional `DESCRIPTION`; use `TakumiOnTheMoon` as the repository author and `YYYY-MM-DD` for dates.
+- Use the `################## EOF ##################` footer consistently. Update the `UPDATED` date to the current date whenever a ruleset changes.
 
 ## Research and coverage standard
 
@@ -55,7 +56,7 @@ Run and record the relevant checks before committing:
 5. **Surge import smoke test** — when Surge is available, import or reload the affected ruleset in a test configuration and verify it parses without errors. If Surge is unavailable, state that the smoke test was not run and perform the static checks above.
 6. **Behavior check when feasible** — test representative official web/app endpoints through the intended policy and verify that expected traffic matches the rule. Do not log in, transact, or bypass security controls unless explicitly authorized.
 
-Run the repository's static validator with `python3 scripts/validate_rulesets.py`. It checks UTF-8, metadata, dates, domain-rule syntax, policy-free format, exact duplicates, and reports parent/child suffix overlaps for manual review. Keep its supported rule types synchronized with any intentional format expansion.
+Run the repository's static validator with `python3 scripts/validate_rulesets.py`. It checks UTF-8, metadata order and dates, the standard EOF marker, domain-rule syntax, policy-free format, exact duplicates, and reports parent/child suffix overlaps for manual review. Keep its supported rule types synchronized with any intentional format expansion.
 
 ## Documentation and change log
 

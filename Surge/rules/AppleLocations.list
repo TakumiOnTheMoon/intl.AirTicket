@@ -1,7 +1,7 @@
 #########################################
 # NAME: Apple Driver & Location
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2026-09-01
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
 # DESCRIPTION: Apple 定位、配置、地图、驱动相关服务域名
 #########################################
 
@@ -9,8 +9,6 @@
 # 📍 定位 / 查找服务
 ##################################
 DOMAIN-SUFFIX,ls.apple.com
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN,configuration.ls.apple.com
 DOMAIN-SUFFIX,findmyiphone.com
 DOMAIN-SUFFIX,findmy.com
 

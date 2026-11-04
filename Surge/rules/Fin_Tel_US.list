@@ -1,7 +1,7 @@
 #########################################
 # NAME: US Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2026-09-01
+# UPDATED: 2026-11-04
 # DESCRIPTION: 美国主要银行、券商、电信运营商、征信机构域名代理规则清单
 #########################################
 
@@ -129,6 +129,4 @@ DOMAIN-SUFFIX,fi.google.com
 DOMAIN-SUFFIX,ting.com
 DOMAIN-SUFFIX,boostmobile.com
 
-##################
-# EOF
-##################
+################## EOF ##################

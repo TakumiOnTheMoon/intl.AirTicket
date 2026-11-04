@@ -1,7 +1,7 @@
 #########################################
 # NAME: DE Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2025-12-15
+# UPDATED: 2026-11-04
 # DESCRIPTION: 德国本地银行、券商、电信及虚拟运营商规则
 #########################################
 
@@ -75,6 +75,4 @@ DOMAIN-SUFFIX,giropay.de
 DOMAIN-SUFFIX,eps-ueberweisung.de
 DOMAIN-SUFFIX,sofort.com
 
-##################
-# EOF
-##################
+################## EOF ##################

@@ -1,7 +1,7 @@
 #########################################
 # NAME: Financial Flexible Services
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2026-09-01
+# UPDATED: 2026-11-04
 # DESCRIPTION: 跨国家/地区账户的金融服务；应由手动策略组选择与当前账户一致的出口
 #########################################
 
@@ -67,6 +67,4 @@ DOMAIN-SUFFIX,gemini.com
 # Bitstamp
 DOMAIN-SUFFIX,bitstamp.net
 
-##################
-# EOF
-##################
+################## EOF ##################

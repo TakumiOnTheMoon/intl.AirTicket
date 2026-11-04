@@ -1,7 +1,7 @@
 #########################################
 # NAME: CA Financial & Telecommunication
 # AUTHOR: TakumiOnTheMoon
-# UPDATED: 2026-09-01
+# UPDATED: 2026-11-04
 # DESCRIPTION: 加拿大本地银行、券商、电信及虚拟运营商规则
 #########################################
 
@@ -65,6 +65,4 @@ DOMAIN-SUFFIX,petro-canada.ca
 ##################################
 DOMAIN-SUFFIX,interac.ca
 
-##################
-# EOF
-##################
+################## EOF ##################

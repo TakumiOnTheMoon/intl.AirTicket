@@ -1,10 +1,9 @@
 #########################################
 # NAME: BT & P2P
-# AUTHOR: TakumiOnThemoon
-# UPDATED: 2026-09-01
+# AUTHOR: TakumiOnTheMoon
+# UPDATED: 2026-11-04
 # DESCRIPTION:
 #   BitTorrent / PT / P2P 相关域名规则
-#   建议策略：DIRECT（避免走代理导致带宽浪费）
 #########################################
 
 # ======================================
